@@ -3,7 +3,6 @@
     max-width: 100%;
     background-color: rgb(18, 18, 18);
     display: flex;
-    padding-bottom: 40px;
     flex-shrink: 1;
   }
   .aboutUs img {
@@ -102,7 +101,7 @@
       }
       .aboutUsContent {
         width: 80%;
-        margin-left: 50px;
+        margin-left: 35px;
       }
     .regalText{
       display: flex;

@@ -68,22 +68,22 @@ function Contacts() {
 </div> */}
       <div className={styles.item}>
         <label htmlFor="name"></label>
-        <input placeholder="vgghgvh" type="text" id="name" {...register('name', { required: true })} />
+        <input placeholder=" прізвище ім'я" type="text" id="name" {...register('name', { required: true })} />
         {errors.name && <span style={{color:"red"}} >sdajbahab</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="email"></label>
-        <input placeholder="vgghgvh" type="email" id="email" {...register('email', { required: true })} />
+        <input placeholder=" електронна адреса" type="email" id="email" {...register('email', { required: true })} />
         {errors.email && <span style={{color:"red"}} >dsanjnakj</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="phone"></label>
-        <input placeholder="vgghgvh"  type="phone" id="phone" {...register('phone', { required: true })} />
+        <input placeholder=" номер телефону"  type="phone" id="phone" {...register('phone', { required: true })} />
         {errors.phone && <span style={{color:"red"}} >jadjkssjn</span>}
       </div>
       <div className={styles.item}>
-      <textarea rows="4" cols="50">
-           Введіть текст тут...
+      <textarea placeholder=" напишіть нам" rows="4" cols="50">
+          
           </textarea>
       </div>
       <button type="submit">Надіслати</button>

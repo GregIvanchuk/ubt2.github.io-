@@ -80,6 +80,13 @@
         margin-right: 10px;
     }
   }
+  @media(max-width:410px){
+    .innerSl {
+        width: 300px;
+        margin-left: 50px;
+        margin-right: 10px;
+    }
+  }
   .leftArrowStyles {
     position: absolute;
     top: 50%;

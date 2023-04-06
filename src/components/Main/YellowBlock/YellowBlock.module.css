@@ -1,5 +1,5 @@
 .yellowBlock2{
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     color: #000;
     padding-top: 40px;
     display: flex;
@@ -24,7 +24,7 @@
     /* background-clip: text;
     -webkit-background-clip: text; /* для підтримки Safari та старіших браузерів */
     /*color: transparent; */
-  font-size: 90px;
+   font-size: 90px;
     color: black;
   }
   

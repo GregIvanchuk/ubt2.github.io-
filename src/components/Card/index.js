@@ -26,7 +26,7 @@ function Card(props) {
                    { PortItems.map((item,id) =>
                     <div className={styles.ourItem}>
                       <img className={styles.ourItemImg} height={250} width={400} src={item.img} />
-                      <h4>{item.title}</h4>
+                      <h3>{item.title}</h3>
                      <p>{item.text}</p>
                       <Link to="/portfolio"><button onClick={(event)=>handleClick(event)} data-button-number={id} >Переглянути</button></Link>
                     </div>     

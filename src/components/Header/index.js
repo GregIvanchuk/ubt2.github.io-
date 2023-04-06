@@ -19,7 +19,7 @@ function Header() {
         <div className={styles.leftHeader}>
             {/* <img width={30} height={30} src="/images/Vector.png" /> */}
             <div className={styles.store_title}>
-                <h3 className={styles.title_store}>S.P. S T U D I O</h3>
+                <h3 className={styles.title_store}>S. P.  S T U D I O</h3>
                  <h4>A R  C  H  I  T  E  C  T  U  R  E   &   D  E  S  I  G  N</h4> 
             </div>
         </div>
