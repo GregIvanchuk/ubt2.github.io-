@@ -1,0 +1,134 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    align-items: center;
+    gap: 200px;
+   
+}
+@media(max-width:1130px){
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+       
+    }
+}
+@media(max-width:1000px){
+    .content{
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+}
+.contWrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(96, 96, 96);
+}
+.contWrapper p {
+    color: rgb(135, 135, 0);
+    font-size: 18px;
+}
+.contWrapper a {
+    color: rgb(135, 135, 0);
+    text-decoration: none;
+    font-size: 18px;
+}
+.linkSocial img {
+    filter: brightness(0) 
+}
+.contWrapper a:hover{
+    color: blue;
+}
+.h1{
+    color: rgb(96, 96, 96);
+    margin-top:150px;
+}
+form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    margin-top:20px;
+    padding-top:40px;
+    padding-bottom:100px;
+}
+textarea{
+    width:600px;
+    height:100px;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    background-color:rgb(22, 22, 22);
+    border:none;
+    padding-left: 5px;
+
+}
+.item{
+    display:flex;
+    flex-direction:column;
+    margin-left:20px;
+    margin-right:20px;
+}
+.item label{
+    color:grey;
+}
+.item input {
+    width:600px;
+    height:50px;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    background-color:rgb(22, 22, 22);
+    border:none;
+    padding-left: 5px;
+}
+@media(max-width:670px){
+    /* .item select,.item select option{
+        width:297px;
+    }; */
+    form{
+        width:350px;
+    }
+    textarea{
+        width:350px;  
+    }
+    .item input{
+        width:350px;
+    }
+    .h1{
+      font-size:25px;
+    }
+}
+
+/* @media(max-width:410px){ */
+    /* .item select,.item select option{
+        width:297px;
+    }; */
+    /* .item input{
+        width:247px;
+    } */
+
+button{
+    height: 50px;
+    width: 300px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(135, 135, 0);
+    border:none;
+    color: black;
+}
+button:hover{
+    background-color: rgb(255, 255, 31);
+}
+   
+iframe{
+    width: 100%;
+    margin-bottom: 50px;
+}

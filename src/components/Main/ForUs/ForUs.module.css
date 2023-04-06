@@ -1,0 +1,164 @@
+.aboutUs{
+    margin-top: 100px;
+    max-width: 100%;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    padding-bottom: 40px;
+    flex-shrink: 1;
+  }
+  .aboutUs img {
+  width: 45%;
+  }
+  .aboutUsContent {
+    width: 50%;
+    margin-left: 115px;
+    margin-right: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .aboutUsBlocks{
+    display: flex;
+    justify-content: center;
+  }
+  .aboutUsBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .regals{
+    width: 100%;
+  }
+  .regalText{
+    display: flex;
+    gap:70vh;
+  }
+  @media (max-width:3000px){
+    .regalText{
+      display: flex;
+      gap:120vh;
+    }
+  }
+  @media (max-width:2390px){
+    .regalText{
+      display: flex;
+      gap:80vh;
+    }
+  }
+  @media (max-width:1896px){
+    .regalText{
+      display: flex;
+      gap:50vh;
+    }
+  }
+  @media (max-width:1367px){
+    .regalText{
+      display: flex;
+      gap:30vh;
+    }
+  }
+  @media (max-width:1280px){
+    .regalText{
+      display: flex;
+      gap:25vh;
+    }
+  }
+  @media (max-width:1194px){
+    .regalText{
+      display: flex;
+      gap:18vh;
+    }
+  }
+  @media (max-width:1073px){
+    .regalText{
+      display: flex;
+      gap:30vh;
+    }
+    .aboutUsContent {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+  @media (max-width:1000px){
+    .regalText{
+      display: flex;
+      gap:25vh;
+    }
+  }
+  @media (max-width:914px){
+    .regalText{
+      display: flex;
+      gap:20vh;
+    }
+  }
+  @media (max-width:831px){
+    .aboutUs img {
+      width: 100%;
+      }
+      .aboutUsContent {
+        width: 80%;
+        margin-left: 50px;
+      }
+    .regalText{
+      display: flex;
+      gap:45vh;
+    }
+    .aboutUs{
+      flex-direction: column;
+    }
+  }
+  @media (max-width:728px){
+    .regalText{
+      display: flex;
+      gap:40vh;
+    }
+  }
+  @media (max-width:670px){
+    .regalText{
+      display: flex;
+      gap:35vh;
+    }
+  }
+  @media (max-width:616px){
+    .regalText{
+      display: flex;
+      gap:30vh;
+    }
+  }
+  @media (max-width:558px){
+    .regalText{
+      display: flex;
+      gap:25vh;
+    }
+  }
+  @media (max-width:504px){
+    .regalText{
+      display: flex;
+      gap:20vh;
+    }
+  }
+  @media (max-width:504px){
+    .regalText{
+      display: flex;
+      gap:15vh;
+    }
+  }
+  .regalLine{
+    width: 100%;
+    background-color:#fde910 ;
+    height: 5px;
+  }
+  
+  .aboutUsBlockHead{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .aboutUsBlockHead{
+    width: 100px;
+  }

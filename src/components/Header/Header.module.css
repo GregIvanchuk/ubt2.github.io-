@@ -1,0 +1,341 @@
+.header {
+    position: fixed;
+    border-bottom: 1px solid #eed603dc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    background-color: black;
+    width: 100%;
+  }
+  .header_container{
+    width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: calc(130px + 1vw);
+  }
+  @media (max-width: 1400px) {
+    .header {
+        gap: 50px;
+  }
+  }
+  @media (max-width: 1100px) {
+    .header {
+        gap: 10px;
+  }
+  }
+  .leftHeader {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .store_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .store_title h3 {
+    letter-spacing: 3px;
+    font-family: "El Messiri";
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fde910;
+  }
+  .store_title h4 {
+    letter-spacing: 3px;
+    margin-left: 10px;
+    margin-top: -28px;
+    padding-top: 100 px;
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #fde910;
+  }
+  .rigthHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+    padding-right: 30px;
+  }
+  @media (max-width: 1200px) {
+    .rigthHeader {
+        gap: 30px;
+  }
+  }
+  .rigthHeader li span {
+    color: #fde910;
+  }
+  .rigthHeader li {
+    display: flex;
+    gap: 10px;
+  }
+  .rigthHeader li a {
+    text-decoration: none;
+    color: #fde910;
+    font-size: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+  }
+  .rigthHeader li a:hover{
+    color:rgb(82, 61, 8);
+  }
+  .cart {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .cart span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+  }
+  .cart span:hover{
+    color: rgb(95, 95, 95);
+  }
+  
+  @media (max-width: 700px) {
+    .header {
+        padding: 10px;
+    }
+  }
+  @media (max-width: 660px) {
+    .header {
+        gap: -5px;
+    }
+  }
+  @media (max-width: 750px) {
+    .cart span {
+        display: none;
+        font-size: 10px;
+    }
+  }
+  @media (max-width: 660px) {
+    .cart span {
+        display:contents;
+        width: 100px;
+  
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .store_title p {
+        font-size: 10px;
+    }
+  }
+  @media (max-width: 370px) {
+    .store_title h3 {
+        font-size: 17px;
+    }
+  }
+  @media (max-width: 370px) {
+    .store_title p {
+        font-size: 8px;
+    }
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burger{
+    display: none;
+    position:relative;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    z-index: 50;
+  }
+  .burger span {
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #fde910;
+  }
+  .burger:before, .burger:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #fde910;
+    transition: all 0.3s ease 0s; 
+  }
+  .burger:before{
+    top: 0;
+  }
+  .burger:after{
+    bottom: 0;
+  }
+  .burger.active span {
+    transform: scale(0);
+  }
+   .burger.active:before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0,-50%);
+   }
+   .burger.active:after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+   }
+   @media(max-width:1450px){
+    header{
+      display: flex;
+      justify-content: space-between;
+      gap: calc(100px + 1vw);
+    }
+    .burger {
+      margin-right: -200px;
+      display: flex;
+   }
+   .store_title {
+    margin-left: -250px;
+
+   }
+   .logo {
+    max-width: 500px;
+  }
+   .menu {
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    overflow-y: auto;
+    padding: 35px 20px;
+    background-color: black;
+    animation: burgerAnimation 0.7s;
+  }
+  .menu ul {
+    display: content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .menu ul li a{
+  font-size: 23px;
+  }
+  .menu ul li div span {
+    font-size: 23px;
+  }
+  .menu ul li a:hover {
+   color: rgb(67, 65, 65);
+  }
+  .menu.active {
+  display: flex;
+  }
+  .menu select {
+  width:120px;
+  height: 30px;
+  color:white; 
+  font-size: 19px;
+  background-color: rgb(10, 45, 69);
+  border:none;
+  }
+  }
+  @keyframes burgerAnimation {
+    from {opacity: 0}
+    to {opacity: 1}
+  }
+  @media(max-width:650px){
+    .logo {
+      max-width: 250px;
+    }
+  }
+  li {
+    position: relative;
+    padding-bottom: 5px;
+    margin-right: 20px;
+  }
+  
+  li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fde910;
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+  }
+  
+  li:hover::after {
+    transform: scaleX(1);
+  }
+  @media(max-width:950px){
+      .burger {
+        margin-right: -100px;
+        display: flex;
+     }
+     .store_title {
+      margin-left: -150px;
+    }}
+    @media(max-width:750px){
+
+      .burger {
+        margin-right: -20px;
+        display: flex;
+     }
+     .store_title {
+      margin-left: -50px;
+    }}
+    @media(max-width:500px){
+      header{
+        display: flex;
+        justify-content: center;
+      }
+      .burger {
+        margin-right: 20px;
+        display: flex;
+     }
+     .store_title {
+      margin-left: 0px;
+    }
+    
+  }
+  @media(max-width:450px){
+    .store_title h3 {
+      letter-spacing: 2px;
+      font-family: "El Messiri";
+      white-space: nowrap;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #fde910;
+    }
+    .store_title h4 {
+      letter-spacing: 2px;
+      margin-left: 10px;
+      margin-top: -28px;
+      padding-top: 100 px;
+      font-family: "Catamaran";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 20px;
+      color: #fde910;
+    }
+  
+}
