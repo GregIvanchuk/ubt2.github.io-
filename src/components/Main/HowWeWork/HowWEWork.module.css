@@ -117,10 +117,28 @@
       list-style: none;  
     }
     ul {
-        padding: 5px;
+        padding: 7px;
     }
     ul li , ul p {
         font-size: 8px;
+    }
+    .header_numder{
+        font-size: 30px;
+    }  
+    .header_title{
+        font-size: 8px;
+    }
+
+}
+@media(max-width:386px){
+    ul li{
+      list-style: none;  
+    }
+    ul {
+        padding: 7px;
+    }
+    ul li , ul p {
+        font-size: 6px;
     }
     .header_numder{
         font-size: 30px;
