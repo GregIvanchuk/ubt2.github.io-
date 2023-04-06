@@ -24,6 +24,11 @@ main {
     background-color:#fde910 ;
     color: #000;
     gap: 100vh;
+    white-space: nowrap;
+  }
+  .yellowBlock h1 {
+    white-space: nowrap;
+    color: black;
   }
   @media(max-width:2000px){
     .yellowBlock{
