@@ -15,21 +15,21 @@ function Services() {
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>
                           <img height={25} width={25} src="/images/i2.png" alt="" />
-                          <h3>ПЛАНУВАННЯ ПРОСТОРУ</h3>
+                          <h3>ПІДБІР МАТЕРІАЛІВ</h3>
                         </div>
                         <p>Ми створюємо кращі інтер’єри завдяки плануванню простору - надзвичайно важливо для успішного дизайну інтер'єру вашого будинку чи офісу.</p>
                       </div>
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>
                           <img height={25} width={25} src="/images/i3.png" alt="" />
-                          <h3>КОНСУЛЬТАЦІЇ</h3>
+                          <h3>РЕМОНТ КВАРТИР ТА ОСОБНЯКІВ </h3>
                         </div>
                         <p>Ми готові проконсультувати вас з будь-якого питання, що стосується дизайну інтер’єру. Зателефонуйте і ми організуємо безкоштовну консультацію.</p>
                       </div>
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>
                           <img height={25} width={25} src="/images/i4.png" alt="" />
-                          <h3>ДИЗАЙН ФЕН-ШУЙ</h3>
+                          <h3>ПРИЙОМ КВАРТИР ВІД ЗАБУДОВНИКА</h3>
                         </div>
                         <p>Маючи багаторічний досвід, ми зможемо допомогти вам спроектувати ваш інтер’єр відповідно до старовинної філософії фен-шуй, заощаджуючи час.</p>
                       </div>

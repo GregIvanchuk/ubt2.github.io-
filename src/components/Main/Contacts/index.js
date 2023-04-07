@@ -45,10 +45,10 @@ function Contacts() {
             <a href="tel:+380937725057">+380 (93) 772-50-57</a>
             <h2>ГРАФІК РОБОТИ:</h2>
             <p>Пн-Сб: 10 - 19</p>
-            <div className={styles.linkSocial}>
+            {/* <div className={styles.linkSocial}>
                 <img src="/images/instagram.png" alt="" />
                 <img src="/images/facebook.png" alt="" />
-            </div>
+            </div> */}
         </div>
  
     <form onSubmit={handleSubmit(onSubmit)}>

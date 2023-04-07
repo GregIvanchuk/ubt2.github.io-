@@ -7,7 +7,7 @@ const AnimatedNumber = ({ number }) => {
     config: { duration: 500, tension: 200, friction: 30 },
   });
 
-  return <animated.span>{props.number.interpolate(n => n.toFixed(0))}</animated.span>;
+  return <animated.span>{props.number.to(n => n.toFixed(0))}</animated.span>;
 };
 
 export default AnimatedNumber;

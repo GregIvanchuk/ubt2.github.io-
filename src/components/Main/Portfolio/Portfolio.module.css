@@ -94,9 +94,8 @@
     overflow: auto;
     white-space: nowrap;
     display: inline-block;
-    justify-content: center;
-    align-items: center;
-  }
+    text-align: center;
+}
   @media(max-width:1020px){
     .dotsContainer {
       width: 800px;

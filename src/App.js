@@ -7,12 +7,12 @@ import Footer from "./components/Footer";
 import Portfolio from "./components/Main/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./components/Main/Services";
-import Card from "./components/Main/Card";
 import ForUs from "./components/Main/ForUs";
+import Gallery from "./components/Main/Gallery";
 
 function App() {
     const [parentData, setParentData] = useState(0);
-    const handleChildDataChange = (data) => {
+    const PullData = (data) => {
         setParentData(data);
     };
 
@@ -26,20 +26,24 @@ function App() {
                         <Route
                             exact
                             path="/"
-                            element={<Main parentData={parentData} />}
+                            element={<Main handleApp={PullData} />}
                         />
-                        {/* <Route
+                        <Route
+                            exact
+                            path="/gallery"
+                            element={<Gallery/>}
+                        />
+                        <Route
                             exact
                             path="/portfolio"
                             element={<Portfolio parentData={parentData} />}
-                        /> */}
+                        />
                         {/* <Route
                             exact
                             path="/projects"
                             element={<Card callback={handleChildDataChange} />}
                         /> */}
                         {/* <Route exact path="/services" element={<Services />} /> */}
-                        {/* <Route exact path="/contacts" element={<Contacts />} /> */}
                         {/* <Route exact path="about" element={<ForUs />} /> */}
                     </Routes>
                 </div>

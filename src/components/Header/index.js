@@ -4,44 +4,49 @@ import { Helmet } from 'react-helmet';
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, scroller  } from "react-scroll";
 
-function handleClickServices() {
-  
-  scroller.scrollTo("services", {
-    duration: 800,
-    delay: 0,
-    smooth: "easeInOutQuart",
-    offset: -30,
-  });
-}
-function handleClickProjects() {
-  scroller.scrollTo("projects", {
-    duration: 800,
-    delay: 0,
-    smooth: "easeInOutQuart",
-    offset: -40,
-  });
-}
-function handleClickAbout() {
-  scroller.scrollTo("about", {
-    duration: 800,
-    delay: 0,
-    smooth: "easeInOutQuart",
-    offset: -120,
-  });
-}
-function handleClickContacts() {
-  scroller.scrollTo("contacts", {
-    duration: 800,
-    delay: 0,
-    smooth: "easeInOutQuart",
-    offset: 40,
-  });
-}
+
 
 
 function Header() {
   let  [open,setOpen] = React.useState("true")
     let openHandler = () => {
+        setOpen(!open);
+      }
+      function handleClickServices() {
+  
+        scroller.scrollTo("services", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+          offset: -30,
+        });
+        setOpen(!open);
+      }
+      function handleClickProjects() {
+        scroller.scrollTo("projects", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+          offset: -40,
+        });
+        setOpen(!open);
+      }
+      function handleClickAbout() {
+        scroller.scrollTo("about", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+          offset: -120,
+        });
+        setOpen(!open);
+      }
+      function handleClickContacts() {
+        scroller.scrollTo("contacts", {
+          duration: 800,
+          delay: 0,
+          smooth: "easeInOutQuart",
+          offset: 40,
+        });
         setOpen(!open);
       }
   return (
@@ -65,7 +70,7 @@ function Header() {
         <li>
            <a href="tel:+380937725057">+380 (93) 772-50-57</a>
             </li>
-           <li>
+           <li onClick={() => openHandler()}>
            <RouterLink  to="/">
                     ГОЛОВНА
                 </RouterLink>
