@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import Portfolio from "./components/Main/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./components/Main/Services";
-import Card from "./components/Card";
-import Contacts from "./components/Contacts";
+import Card from "./components/Main/Card";
 import ForUs from "./components/Main/ForUs";
 
 function App() {
@@ -29,19 +28,19 @@ function App() {
                             path="/"
                             element={<Main parentData={parentData} />}
                         />
-                        <Route
+                        {/* <Route
                             exact
                             path="/portfolio"
                             element={<Portfolio parentData={parentData} />}
-                        />
-                        <Route
+                        /> */}
+                        {/* <Route
                             exact
                             path="/projects"
                             element={<Card callback={handleChildDataChange} />}
-                        />
-                        <Route exact path="/services" element={<Services />} />
-                        <Route exact path="/contacts" element={<Contacts />} />
-                        <Route exact path="about" element={<ForUs />} />
+                        /> */}
+                        {/* <Route exact path="/services" element={<Services />} /> */}
+                        {/* <Route exact path="/contacts" element={<Contacts />} /> */}
+                        {/* <Route exact path="about" element={<ForUs />} /> */}
                     </Routes>
                 </div>
 

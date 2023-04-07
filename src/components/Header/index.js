@@ -1,7 +1,44 @@
 import styles from './Header.module.css';
 import React from "react";
 import { Helmet } from 'react-helmet';
-import {Link} from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink, scroller  } from "react-scroll";
+
+function handleClickServices() {
+  
+  scroller.scrollTo("services", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart",
+    offset: -30,
+  });
+}
+function handleClickProjects() {
+  scroller.scrollTo("projects", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart",
+    offset: -40,
+  });
+}
+function handleClickAbout() {
+  scroller.scrollTo("about", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart",
+    offset: -120,
+  });
+}
+function handleClickContacts() {
+  scroller.scrollTo("contacts", {
+    duration: 800,
+    delay: 0,
+    smooth: "easeInOutQuart",
+    offset: 40,
+  });
+}
+
+
 function Header() {
   let  [open,setOpen] = React.useState("true")
     let openHandler = () => {
@@ -29,29 +66,29 @@ function Header() {
            <a href="tel:+380937725057">+380 (93) 772-50-57</a>
             </li>
            <li>
-           <Link to="/">
+           <RouterLink  to="/">
                     ГОЛОВНА
-                </Link>
+                </RouterLink>
             </li>
             <li>
-            <Link to="/services">
+            <ScrollLink onClick={handleClickServices} to="/services">
                     ПОСЛУГИ
-                </Link>
+                </ScrollLink>
             </li>
             <li>
-            <Link to="/projects">
+            <ScrollLink onClick={handleClickProjects} to="/projects">
                     НАШІ РОБОТИ
-                </Link>
+                </ScrollLink>
                 </li>
                 <li>
-                <Link to="/about">
+                <ScrollLink onClick={handleClickAbout} to="/about">
                    ПРО НАС
-                </Link>
+                </ScrollLink>
                 </li>
             <li>
-            <Link to="/contacts">
+            <ScrollLink onClick={handleClickContacts}  to="/contacts">
                    КОНТАКТИ
-                </Link>
+                   </ScrollLink>
             </li>
         </ul>
         </div>

@@ -1,6 +1,16 @@
 import styles from './Footer.module.css';
 import React, { useState, useEffect } from 'react';
+import { Link as ScrollLink, scroller  } from "react-scroll";
+function handleClickStart()  {
+    scroller.scrollTo("home", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  }
+  
 function Footer() {  
+  
   return (
     <>
     <footer>
@@ -10,7 +20,7 @@ function Footer() {
                 <h3>S.P. Studio</h3>
                 <h4>A R  C  H  I  T  E  C  T  U  R  E   &   D  E  S  I  G  N</h4> 
             </div>
-            <button>Повернутися вгору</button>
+            <button  ><ScrollLink onClick={handleClickStart}  to="/home">Повернутися вгору</ScrollLink></button>
            </div>
            <div className={styles.secondBlock}>
             <h4>КОНТАКТИ</h4>
