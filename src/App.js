@@ -9,12 +9,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./components/Main/Services";
 import ForUs from "./components/Main/ForUs";
 import Gallery from "./components/Main/Gallery";
+import Contacts from "./components/Main/Contacts";
+import Card from "./components/Main/Card";
 
 function App() {
-    const [parentData, setParentData] = useState(0);
-    const PullData = (data) => {
-        setParentData(data);
-    };
+    // const [parentData, setParentData] = useState(0);
+    // const PullData = (data) => {
+    //     setParentData(data);
+    // };
 
     return (
         <>
@@ -26,28 +28,28 @@ function App() {
                         <Route
                             exact
                             path="/"
-                            element={<Main handleApp={PullData} />}
+                            element={<Main />}
                         />
                         <Route
                             exact
                             path="/gallery"
                             element={<Gallery/>}
                         />
-                        <Route
+                        {/* <Route
                             exact
                             path="/portfolio"
                             element={<Portfolio parentData={parentData} />}
-                        />
-                        {/* <Route
+                        /> */}
+                         <Route
                             exact
                             path="/projects"
-                            element={<Card callback={handleChildDataChange} />}
-                        /> */}
-                        {/* <Route exact path="/services" element={<Services />} /> */}
-                        {/* <Route exact path="about" element={<ForUs />} /> */}
+                            element={<Card />}
+                        /> 
+                          <Route exact path="/contacts" element={<Contacts/>} />
+                        <Route exact path="/services" element={<Services />} />
+                        <Route exact path="about" element={<ForUs />} />
                     </Routes>
                 </div>
-
                 <Footer />
             </Router>
         </>

@@ -38,6 +38,7 @@ function Contacts() {
     <div className={styles.wrapper}>
     <div className={styles.content}>
         <div className={styles.contWrapper}>
+       
             <h1>НАШІ КОНТАКТИ</h1>
             <h2>АДРЕСА:</h2>
             <a href="https://www.google.com/maps/place/%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA,+%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+83000/@47.9901174,37.7615206,11z/data=!3m1!4b1!4m6!3m5!1s0x40e0909500919a2d:0x36335efdc5856f84!8m2!3d48.015883!4d37.80285!16zL20vMDJxYnBk">м.Донецьк просп.Незалежності 107</a>
@@ -52,8 +53,10 @@ function Contacts() {
         </div>
  
     <form onSubmit={handleSubmit(onSubmit)}>
+    <section id='home'>
     <h1 className={styles.h1}>ШВИДКИЙ ЗВ'ЯЗОК З НАМИ!
 ЗАЛИШТЕ ЗАПИТ І МИ З ВАМИ ЗВ'ЯЖЕМОСЬ!</h1>
+    </section>
       {/* <div className={styles.item}>
   <label htmlFor="category"></label>
   <select id="category" {...register('category', { required: true })}>

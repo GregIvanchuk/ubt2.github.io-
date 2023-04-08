@@ -47,6 +47,7 @@
     font-size:50px;
   }
   .innerSl button{
+    cursor: pointer;
     width: 180px;
     height: 40px;
     color: black;
@@ -93,11 +94,15 @@
       z-index: 2;
       cursor: pointer;
     }
+    .slideStyles img {
+      height: 450px;
+    }
   }
   @media(max-width:410px){
     .innerSl {
+        justify-content: center;
         width: 300px;
-        margin-left: 50px;
+        margin-left: 80px;
         margin-right: 10px;
     }
   }

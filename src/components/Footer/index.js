@@ -20,7 +20,7 @@ function Footer() {
                 <h3>S.P. Studio</h3>
                 <h4>A R  C  H  I  T  E  C  T  U  R  E   &   D  E  S  I  G  N</h4> 
             </div>
-            <button  ><ScrollLink onClick={handleClickStart}  to="/home">Повернутися вгору</ScrollLink></button>
+            <ScrollLink onClick={handleClickStart}  to="/home"> <button  >Повернутися вгору</button></ScrollLink>
            </div>
            <div className={styles.secondBlock}>
             <h4>КОНТАКТИ</h4>

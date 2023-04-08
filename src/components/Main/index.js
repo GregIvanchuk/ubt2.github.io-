@@ -2,12 +2,10 @@ import styles from "./Main.module.css";
 import { Helmet } from "react-helmet";
 import SecondSlider from "./SecondSlider";
 import Services from "./Services";
-import YellowBlock from "./YellowBlock";
 import MainSlider from "./MainSlider";
 import React, { useEffect, useRef, useState } from "react";
 import Card from "./Card";
 import ForUs from "./ForUs";
-import HowWEWork from "./HowWeWork";
 import Contacts from "./Contacts";
 
 function Main({ handleApp }) {
@@ -37,8 +35,6 @@ function Main({ handleApp }) {
                     <section id="about">
                         <ForUs /> 
                         </section>
-                        <HowWEWork />
-                        <YellowBlock />
                     <section id="contacts"><Contacts/></section>
                     {/* <SecondSlider />  */}
                 </div>

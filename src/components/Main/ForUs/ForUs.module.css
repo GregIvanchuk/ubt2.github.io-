@@ -1,5 +1,9 @@
+.dot{
+  color: black;
+}
 .aboutUs{
-    margin-bottom:30px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 100%;
     background-color: rgb(18, 18, 18);
     display: flex;
@@ -9,6 +13,7 @@
   width: 45%;
   }
   .aboutUsContent {
+    padding-top:60px;
     width: 50%;
     margin-left: 115px;
     margin-right: 115px;
@@ -18,7 +23,7 @@
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   .aboutUsBlocks{
     display: flex;
@@ -109,6 +114,7 @@
     }
     .aboutUs{
       flex-direction: column;
+      gap: 20px;
     }
   }
   @media (max-width:728px){

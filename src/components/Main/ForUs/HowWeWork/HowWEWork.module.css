@@ -1,24 +1,9 @@
-/* <div className={styles.wrapper}>
-<div className={styles.container}>
-    <div className={styles.item}>
-       <div className={styles.header}>
-        <div className={styles.header_numder}>01</div>
-        <div className={styles.header_title}>ЗНАЙОМСТВО</div>
-        <div className={styles.header_line}></div>
-        <ul>
-            <li></li>
-            <li></li>
-        </ul>
-       </div>
-    </div> */
 .wrapper{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
-}
-
+} 
 .container{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -158,7 +143,7 @@
 
 }
 .item1:hover,.item2:hover,.item3:hover,.item4:hover,.item5:hover{
-    background-color:#fde910;
+    background-color: yellow;
     color: black;
 }
 

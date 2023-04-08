@@ -89,6 +89,9 @@
     font-style: normal;
     font-weight: 700;
   }
+  .rigthHeader li .activen  {
+    color:rgb(82, 61, 8);
+  }
   .rigthHeader li a:hover{
     color:rgb(82, 61, 8);
   }

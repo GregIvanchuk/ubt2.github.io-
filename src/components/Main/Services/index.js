@@ -3,7 +3,9 @@ function Services() {
   return (
     <>
                   <div className={styles.ourServices}>
+                 <section id='home'>
                     <h1>НАШІ ПОСЛУГИ</h1>
+                    </section>
                     <div className={styles.services}>
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>

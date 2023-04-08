@@ -60,6 +60,7 @@ footer{
     color: black;
 }
 .firstBlock  button {
+    cursor: pointer;
     width: 180px;
     height: 40px;
     color: white;

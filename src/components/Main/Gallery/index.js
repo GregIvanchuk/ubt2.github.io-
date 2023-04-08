@@ -6,7 +6,9 @@ function Gallery() {
   return (
     <>
     <div className={styles.wrapper}>
-    <h1>НАШІ ПРОЕКТИ</h1>
+    <section id="home">
+    <h1>----------</h1>
+    </section>
     <div className={styles.gallery}>
       {img.map((item,index) => <img className={styles.img} src={item}/>)}
     </div>

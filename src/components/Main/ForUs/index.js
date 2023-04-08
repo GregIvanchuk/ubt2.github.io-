@@ -1,10 +1,16 @@
+import HowWEWork from '../HowWeWork';
 import styles from './ForUs.module.css';
+import YellowBlock from './YellowBlock';
 const ForUs = () =>{
     return(
-<div className={styles.aboutUs}>
+      <>
+      <section id='home'>
+                    <p className={styles.dot} >.</p>
+                    </section>
+      <div className={styles.aboutUs}>
                     <div className={styles.aboutUsContent}>
                       <h1>ПРО НАС</h1>
-                      <p> Ми - команда професійних, енергійних людей з талановитими дизайнерами та досвідченими менеджерами, які можуть проводити наших клієнтів через бездоганне та своєчасне виконання будь-якого проекту житлового дизайну.З першого дня ми пропонуємо творчі та затишні інтер'єри для наших клієнтів.</p>
+                      <p> Ми - команда професійних, енергійних людей з талановитими дизайнерами та досвідченими менеджерами, які можуть проводити наших клієнтів через бездоганне та своєчасне виконання будь-якого проекту житлового дизайн. З першого дня ми пропонуємо творчі та затишні інтер'єри для наших клієнтів.</p>
                       <div className={styles.aboutUsBlocks}>
                         {/* <div className={styles.aboutUsBlock}>
                           <div className={styles.aboutUsBlockHead}>
@@ -38,8 +44,11 @@ const ForUs = () =>{
                         </div>
                       </div>
                     </div>
-                    <img width={400} height={600} src="/images/about.jpg" alt="" />
+                    <img src="/images/about.jpg" alt="" />
                   </div>
+                  <HowWEWork/>
+                    <YellowBlock/>
+                  </>
                   )
                   }
                   export default ForUs;

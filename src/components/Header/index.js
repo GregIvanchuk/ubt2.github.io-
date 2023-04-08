@@ -4,14 +4,13 @@ import { Helmet } from 'react-helmet';
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, scroller  } from "react-scroll";
 
-
-
-
 function Header() {
+  const [activeItem, setActiveItem] = React.useState(0);
   let  [open,setOpen] = React.useState("true")
-    let openHandler = () => {
+    let openHandler= () => {
         setOpen(!open);
       }
+      
       function handleClickServices() {
   
         scroller.scrollTo("services", {
@@ -20,6 +19,7 @@ function Header() {
           smooth: "easeInOutQuart",
           offset: -30,
         });
+        setActiveItem(1)
         setOpen(!open);
       }
       function handleClickProjects() {
@@ -29,6 +29,7 @@ function Header() {
           smooth: "easeInOutQuart",
           offset: -40,
         });
+        setActiveItem(2);
         setOpen(!open);
       }
       function handleClickAbout() {
@@ -38,6 +39,7 @@ function Header() {
           smooth: "easeInOutQuart",
           offset: -120,
         });
+        setActiveItem(3);
         setOpen(!open);
       }
       function handleClickContacts() {
@@ -47,6 +49,7 @@ function Header() {
           smooth: "easeInOutQuart",
           offset: 40,
         });
+        setActiveItem(4);
         setOpen(!open);
       }
   return (
@@ -66,34 +69,34 @@ function Header() {
             </div>
         </div>
         <div className={open ? styles.menu : styles.menu + " " + styles.active }>
-        <ul onClick={() => openHandler()} className={styles.rigthHeader}>
+        <ul  onClick={() => openHandler()}   className={styles.rigthHeader}>
         <li>
            <a href="tel:+380937725057">+380 (93) 772-50-57</a>
             </li>
-           <li onClick={() => openHandler()}>
-           <RouterLink  to="/">
+           <li >
+           <RouterLink className={activeItem === 0 ? styles.activen : ''} onClick={() => setActiveItem(0)}  to="/">
                     ГОЛОВНА
                 </RouterLink>
             </li>
-            <li>
-            <ScrollLink onClick={handleClickServices} to="/services">
+            <li >
+            <RouterLink className={activeItem === 1 ? styles.activen : ''}  onClick={handleClickServices} to="/services">
                     ПОСЛУГИ
-                </ScrollLink>
+                </RouterLink>
             </li>
             <li>
-            <ScrollLink onClick={handleClickProjects} to="/projects">
+            <RouterLink  className={activeItem === 2 ? styles.activen : ''} onClick={handleClickProjects} to="/projects">
                     НАШІ РОБОТИ
-                </ScrollLink>
+                </RouterLink>
                 </li>
-                <li>
-                <ScrollLink onClick={handleClickAbout} to="/about">
+                <li >
+                <RouterLink className={activeItem === 3 ? styles.activen : ''}  onClick={handleClickAbout} to="/about">
                    ПРО НАС
-                </ScrollLink>
+                </RouterLink>
                 </li>
             <li>
-            <ScrollLink onClick={handleClickContacts}  to="/contacts">
+            <RouterLink className={activeItem === 4 ? styles.activen : ''} onClick={handleClickContacts}  to="/contacts">
                    КОНТАКТИ
-                   </ScrollLink>
+                   </RouterLink>
             </li>
         </ul>
         </div>
