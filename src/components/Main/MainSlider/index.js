@@ -1,8 +1,13 @@
 import styles from './MainSlider.module.css';
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
+import FormFeedback from '../FormFeedback';
 function MainSlider() {
       // ---------------------------------------------
+      const [isOpen,setIsOpen] = useState(true);
+      const openForm = () =>{
+        setIsOpen(!isOpen);
+      }
       const slides= [
         {src:"/images/slide1.jpg"  ,title:"СТВОРЕННЯ ІНДИВІДУАЛЬНИХ ІНТЕР'ЄРІВ" ,p:"МИ ПРОЕКТУЄМО ДИВОВИЖНІ ІНТЕР'ЄРИ"},
         {src:"/images/slide2.jpg"  ,title:"ПЕРСОЛІЗОВАНІ ІНТЕР'ЄРИ " ,p:"НАША КОМАНДА МОЖЕ ПЕРСОНАЛІЗУВАТИ ІСНУЮЧИЙ ІНТЕР'ЄР"},
@@ -43,7 +48,7 @@ function MainSlider() {
                           <div  className={styles.innerSl} >
                            <h1>{slides[currentIndex].title}</h1>
                            <h3>{slides[currentIndex].p}</h3>
-                           <button>Передзвоніть мені</button>
+                           <button onClick={() => openForm()}>Передзвоніть мені</button>
                            </div>
                         <div className={styles.leftArrowStyles} onClick={goToPrevios}>
                           <img height={22} width={22} src="/images/rarrow.png"  alt="" />
@@ -56,6 +61,7 @@ function MainSlider() {
               {slides.map((item,slideIndex)=><div onClick={() => goToSlide(slideIndex)} className={styles.dots}  key={slideIndex}>.</div>)}
                     </div>
                 </div>
+               {isOpen ? <FormFeedback openForm={openForm} /> : ""} 
     </>
   );
 }
