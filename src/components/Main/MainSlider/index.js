@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import FormFeedback from '../FormFeedback';
 function MainSlider() {
       // ---------------------------------------------
-      const [isOpen,setIsOpen] = useState(true);
+      const [isOpen,setIsOpen] = useState(false);
       const openForm = () =>{
         setIsOpen(!isOpen);
       }
