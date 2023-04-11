@@ -45,6 +45,8 @@
   }
   .innerSl h1 {
     font-size:50px;
+    font-family: "Oswald" ;
+    font-weight: bold;
   }
   .innerSl button{
     cursor: pointer;

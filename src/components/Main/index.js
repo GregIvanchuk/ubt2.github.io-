@@ -15,12 +15,7 @@ function Main({ handleApp }) {
     };
     return (
         <>
-            <Helmet>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-                    rel="stylesheet"
-                />
-            </Helmet>
+            
             <main>
                 <section id="home">
                     <MainSlider />

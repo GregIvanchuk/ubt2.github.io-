@@ -23,14 +23,14 @@ function Services() {
                       </div>
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>
-                          <img height={25} width={25} src="/images/i3.png" alt="" />
+                          <img height={35} width={35} src="/images/i6.png" alt="" />
                           <h3>РЕМОНТ КВАРТИР ТА ОСОБНЯКІВ </h3>
                         </div>
                         <p>Ми готові проконсультувати вас з будь-якого питання, що стосується дизайну інтер’єру. Зателефонуйте і ми організуємо безкоштовну консультацію.</p>
                       </div>
                       <div className={styles.service}>
                         <div className={styles.serviceHeader}>
-                          <img height={25} width={25} src="/images/i4.png" alt="" />
+                          <img height={30} width={30} src="/images/i5.png" alt="" />
                           <h3>ПРИЙОМ КВАРТИР ВІД ЗАБУДОВНИКА</h3>
                         </div>
                         <p>Маючи багаторічний досвід, ми зможемо допомогти вам спроектувати ваш інтер’єр відповідно до старовинної філософії фен-шуй, заощаджуючи час.</p>

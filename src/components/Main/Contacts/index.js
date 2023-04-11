@@ -4,33 +4,20 @@ import axios from 'axios';
 import styles from './Contacts.module.css';
 function Contacts() {
   const { register, handleSubmit, reset , formState: { errors } } = useForm();
-
+  const apiForm2 = process.env.REACT_APP_API_URL_FORM_TWO
   const onSubmit = (data) => {
-    const sendinblueApiKey = process.env.REACT_APP_API_KEY;
-    axios({
-      method: 'post',
-      url: 'https://api.sendinblue.com/v3/smtp/email',
-      headers: {
-        'Content-Type': 'application/json',
-        'api-key': sendinblueApiKey,
-      },
-      data: {
-        sender: { name: data.name, email: data.email },
-        to: [{ email:'gregiv99@gmail.com'}],
-        subject: data.category,
-        htmlContent: `Місто:${data.city}
-        <br>Номер телефону: ${data.phone}
-        <br>Прізвище та ініціали: ${data.name}
-        <br>Електронна адреса: ${data.email}<br>Послуга яку потребує клієнт: ${data.category}`,
-      },
+    axios.post(apiForm2, data)
+    .then((response) => {
+      if (response.status === 200) {
+        alert('Form submitted successfully!');
+      } else {
+        throw new Error(response.statusText);
+      }
     })
-      .then(function (response) {
-        reset();
-        alert("vgghgvh");
-      })
-      .catch(function (error) {
-        alert("vgghgvh");
-      });
+    .catch((error) => {
+      console.error(error);
+      alert('Form submission failed.');
+    });
   };
 
   return (
@@ -72,22 +59,22 @@ function Contacts() {
       <div className={styles.item}>
         <label htmlFor="name"></label>
         <input placeholder=" прізвище ім'я" type="text" id="name" {...register('name', { required: true })} />
-        {errors.name && <span style={{color:"red"}} >sdajbahab</span>}
+        {errors.name && <span style={{color:"red"}} >всі поля мають бути заповнені</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="email"></label>
         <input placeholder=" електронна адреса" type="email" id="email" {...register('email', { required: true })} />
-        {errors.email && <span style={{color:"red"}} >dsanjnakj</span>}
+        {errors.email && <span style={{color:"red"}} >всі поля мають бути заповнені</span>}
       </div>
       <div className={styles.item}>
         <label htmlFor="phone"></label>
         <input placeholder=" номер телефону"  type="phone" id="phone" {...register('phone', { required: true })} />
-        {errors.phone && <span style={{color:"red"}} >jadjkssjn</span>}
+        {errors.phone && <span style={{color:"red"}} >всі поля мають бути заповнені</span>}
       </div>
       <div className={styles.item}>
-      <textarea placeholder=" напишіть нам" rows="4" cols="50">
-          
-          </textarea>
+      <label htmlFor="letter"></label>
+      <textarea placeholder=" напишіть нам" rows="4" cols="50" type="text" id="letter" {...register('letter', { required: true })}/>
+      {errors.letter && <span style={{color:"red"}} >всі поля мають бути заповнені</span>}
       </div>
       <button type="submit">Надіслати</button>
     </form>

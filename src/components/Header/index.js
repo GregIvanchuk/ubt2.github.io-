@@ -60,6 +60,7 @@ function Header() {
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Catamaran&family=El+Messiri&display=swap" rel="stylesheet"/>
+
     </Helmet>
         <div className={styles.leftHeader}>
             {/* <img width={30} height={30} src="/images/Vector.png" /> */}

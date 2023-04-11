@@ -55,7 +55,7 @@ function Card(props) {
                      }
                      function handleClickSlider()  {
                          scroller.scrollTo("slider", {
-                           duration: 800,
+                           duration: 1000,
                            delay: 0,
                            smooth: "easeInOutQuart",
                            offset:-50,
@@ -87,12 +87,7 @@ function Card(props) {
                 </section>
        <div className={styles.ourProjects}>
                     <div className={styles.ourItems}>
-                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <h3>ВСІ ПРОЕКТИ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
-                      <Link to="/gallery"><button >Переглянути</button></Link>
-                    </div>     
+                    
                    { PortItems.map((item,id) =>
                     <div className={styles.ourItem}>
                       <img className={styles.ourItemImg} height={260} width={400} src={item.img} />
@@ -101,6 +96,12 @@ function Card(props) {
                      <ScrollLink onClick={handleClickSlider}  to="/slider" >  <button onClick={(event)=>handleClick(event)} data-button-number={id} >Переглянути</button></ScrollLink>
                     </div>     
                     )}    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <h3>ВСІ ПРОЕКТИ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <Link to="/gallery"><button >Переглянути</button></Link>
+                    </div>     
                     </div>
                   </div>
                       

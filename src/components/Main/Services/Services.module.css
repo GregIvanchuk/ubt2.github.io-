@@ -28,9 +28,15 @@
     height: 350px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media(max-width:1300px){
+    .service{
+      margin-bottom: 0px;
+    }
   }
   .service h3 {
-    font-size: 30px;
+    font-size: 25px;
   } 
   .service p {
     font-size: 20px;
@@ -74,7 +80,7 @@
      
     }
     .service h3 {
-      font-size: 25px;
+      font-size: 22px;
     } 
     .service p {
       font-size: 16px;

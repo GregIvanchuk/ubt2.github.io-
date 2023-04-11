@@ -47,7 +47,7 @@ const ForUs = () =>{
                     <img src="/images/about.jpg" alt="" />
                   </div>
                   <HowWEWork/>
-                    <YellowBlock/>
+                    {/* <YellowBlock/> */}
                   </>
                   )
                   }
