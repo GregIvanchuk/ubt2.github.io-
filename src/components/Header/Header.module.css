@@ -39,7 +39,8 @@
     flex-direction: column;
   }
   .store_title h3 {
-    letter-spacing: 3px;
+    display: flex;
+    letter-spacing: 6px;
     font-family: "El Messiri";
     white-space: nowrap;
     font-style: normal;

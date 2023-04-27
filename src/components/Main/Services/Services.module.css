@@ -1,6 +1,6 @@
 .ourServices{
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
   }
   .services{
     display: flex;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -23,12 +23,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 540px;
-    height: 350px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 30px;
+    justify-content: flex-start;
+    width: 600px;
+    height: 500px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   @media(max-width:1300px){
     .service{
@@ -41,6 +41,11 @@
   .service p {
     font-size: 20px;
     text-align: justify;
+  }
+  .service p {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
   }
   .service:hover{
     background-color: #fde910;
@@ -56,7 +61,7 @@
   .service:hover .serviceHeader img {
     filter: brightness(0) invert(0);
   }
-  @media(max-width:3000px){
+   /* @media(max-width:3000px){
     .service{
       width: 30%;
     }
@@ -68,15 +73,13 @@
       margin-right: 20px;
      
     }
-  }
-  @media(max-width:650px){
+  } */
+  @media(max-width:750px){
     .service{
-      width: 450px;
-      height: 250px;
+      width: 550px;
+      height: 350px;
       margin-left: 15px;
       margin-right: 15px;
-      padding-left: 12px;
-      padding-right: 12px;
      
     }
     .service h3 {
@@ -90,15 +93,32 @@
       font-size: 20px;
     }
   }
+  @media(max-width:624px){
+    .service{
+      width: 350px;
+      height: 450px;
+      margin-left: 15px;
+      margin-right: 15px;
+      padding-left: 30px;
+      padding-right: 10px;
+    }
+    .service h3 {
+      font-size: 18px;
+    } 
+    .service p {
+      font-size: 14px;
+      text-align: justify;
+    }
+    .ourServices{
+      font-size: 20px;
+    }
+  }
   @media(max-width:490px){
     .service{
       width: 300px;
-      height: 200px;
+      height: 450px;
       margin-left: 15px;
       margin-right: 15px;
-      padding-left: 12px;
-      padding-right: 12px;
-     
     }
     .service h3 {
       font-size: 20px;
@@ -108,4 +128,3 @@
       text-align: justify;
     }
   }
- 

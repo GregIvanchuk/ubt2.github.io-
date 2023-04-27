@@ -5,19 +5,14 @@ import { Link as ScrollLink, scroller  } from "react-scroll";
 function Card(props) {
   const [parentData, setParentData] = useState(0)
   const slides=[
-    ["/images/slide1.jpg","/images/slide2.jpg","/images/slide3.jpg",],
-    ["/images/woman1.jpg","/images/woman2.jpg","/images/man.jpg",],
-    ["/images/vit1.jpg","/images/vit2.jpg","/images/vit3.jpg","/images/vit4.jpg",],
-    ["/images/ch1.jpg","/images/ch3.jpg","/images/ch4.jpg",],  
-    ["/images/bh1.jpg","/images/bh2.jpg","/images/bh3.jpg","/images/bh4.jpg","/images/bh5.jpg",],
+    ["/images/slide1.jpg","/images/slide2.jpg","/images/slide3.jpg","/images/vit1.jpg","/images/bh1.jpg","/images/ch3.jpg",],
+    
   ]
+  // ["/images/woman1.jpg","/images/woman2.jpg","/images/man.jpg",],
+  //   ["/images/vit2.jpg","/images/vit3.jpg","/images/vit4.jpg",],
+  //   ["/images/ch1.jpg","/images/ch3.jpg","/images/ch4.jpg",],  
+  //   ["/images/bh2.jpg","/images/bh3.jpg","/images/bh4.jpg","/images/bh5.jpg",],
       const [currentIndex, setcurrentIndex] = useState(0);
-    //   useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //       goToNext();
-    //     }, 3000);
-    //     return () => clearInterval(intervalId);
-    // }, [currentIndex]);
       const goToPrevios = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? slides[parentData].length - 1 : currentIndex - 1;
@@ -41,9 +36,9 @@ function Card(props) {
   /*-------------------------------------------------------------------------------------------------------*/
 
     const [catId, setCatId]=React.useState(0)
-    const PortItems = [{id:0, img:"/images/slide2.jpg", title: "ВІТАЛЬНІ", text: "Ми із задоволенням створимо новий приголомшливий дизайн інтер’єру для вашої вітальні з урахуванням усіх ваших побажань та міркувань, щоб він викликав тільки позитивні емоції."},
+    const PortItems = [{id:0, img:"/images/vit1.jpg", title: "ВІТАЛЬНІ", text: "Ми із задоволенням створимо новий приголомшливий дизайн інтер’єру для вашої вітальні з урахуванням усіх ваших побажань та міркувань, щоб він викликав тільки позитивні емоції."},
                        {id:1, img:"/images/slide2.jpg", title: "СПАЛЬНІ", text: "Створимо дизайн для вашої спальні, щоб Вам було зручно і комфорно відпочивати і насолоджуватись затишною атмосферою. Адже спальня це місце де ми проводимо найбільше часу."},
-                       {id:2, img:"/images/slide2.jpg", title: "КУХНІ", text: "Незалежно від того, чи є це частиною житлового будинку чи квартири, добре структурована та оформлена кухня є життєво важливою для комфортного проживання незалежно від розміру."},
+                       {id:2, img:"/images/ch1.jpg", title: "КУХНІ", text: "Незалежно від того, чи є це частиною житлового будинку чи квартири, добре структурована та оформлена кухня є життєво важливою для комфортного проживання незалежно від розміру."},
                        {id:3, img:"/images/slide2.jpg", title: "КОРИДОР", text: "Шукаєте ідею створити новий або перетворити старий коридор? Довіртеся нашим винятково кваліфікованим дизайнерам та архітекторам, якщо ви прагнете досягти найкращих результатів."},
                        {id:4, img:"/images/slide2.jpg", title: "ДИТЯЧІ", text: "Наші навички та професіоналізм дозволяють нам працювати над візуальним та функціональним вдосконаленням дитячих, ваші діти будуть приємно вражені."},
                     //  {id:5, img:"/images/slide2.jpg", title: "КАБІНЕТ", text: "Наша дизайнерська студія часто займається реконструкцією та переробкою кабінету. Ми зможемо успішно перетворити ваш офіс у візуально привабливий центр ділової активності."},
@@ -71,14 +66,11 @@ function Card(props) {
             </section>
                     <div  className={styles.slideStyles} >
                           <img width={1400} height={500}  src={slides[parentData][currentIndex]}/> 
-            
-                        <div className={styles.leftArrowStyles} onClick={goToPrevios}>
-                          <img height={32} width={32} src="/images/rarrow.png"  alt="" />
-                          </div>
-                        <div className={styles.rightArrowStyles} onClick={goToNext}> 
-                        <img height={32} width={32} src="/images/larrow.png" alt="" />
-                          </div>
                     </div>
+                    <div  className={styles.arrows} >
+                          <img onClick={goToPrevios} className={styles.leftArrowStyles} height={32} width={32} src="/images/rarrow.png"  alt="" />
+                        <img className={styles.rightArrowStyles} onClick={goToNext} height={32} width={32} src="/images/larrow.png" alt="" />
+                        </div>
                     <div  className={styles.dotsContainer}>
               {slides[parentData].map((item,slideIndex)=><img src={item} width={200} height={100} onClick={() => goToSlide(slideIndex)} 
                className={`${styles.dots} ${currentIndex === slideIndex ? styles.activeDot : ''}`}  key={slideIndex}/>)}
@@ -88,19 +80,64 @@ function Card(props) {
        <div className={styles.ourProjects}>
                     <div className={styles.ourItems}>
                     
-                   { PortItems.map((item,id) =>
-                    <div className={styles.ourItem}>
+                   {/* { PortItems.map((item,id) =>
+                    <div key={id} className={styles.ourItem}>
                       <img className={styles.ourItemImg} height={260} width={400} src={item.img} />
+                      <div className={styles.text}>
                       <h3>{item.title}</h3>
                      <p>{item.text}</p>
+                     </div>
                      <ScrollLink onClick={handleClickSlider}  to="/slider" >  <button onClick={(event)=>handleClick(event)} data-button-number={id} >Переглянути</button></ScrollLink>
                     </div>     
-                    )}    
+                    )}     */}
+
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
                       <h3>ВСІ ПРОЕКТИ</h3>
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
                       <Link to="/gallery"><button >Переглянути</button></Link>
+                    </div>    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
+                      <h3>ВІТАЛЬНІ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
+                      <Link to="/galleryvit"><button >Переглянути</button></Link>
+                    </div>    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
+                      <h3>СПАЛЬНІ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
+                      <Link to="/gallerybd"><button >Переглянути</button></Link>
+                    </div>    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
+                      <h3>КУХНІ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
+                      <Link to="/gallerykch"><button >Переглянути</button></Link>
+                    </div>    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
+                      <h3>КАБІНЕТИ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
+                      <Link to="/gallerych"><button >Переглянути</button></Link>
+                    </div>    
+                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
+                      <div className={styles.text}>
+                      <h3>САНВУЗЛИ</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                     </div>
+                      <Link to="/gallerybth"><button >Переглянути</button></Link>
                     </div>     
                     </div>
                   </div>

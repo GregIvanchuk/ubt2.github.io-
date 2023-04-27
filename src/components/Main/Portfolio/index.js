@@ -38,7 +38,6 @@ function Portfolio({parentData}) {
   return (
     <>     
             <div  className={styles.sliderStyles}>
-            <h1>СПАЛЬНІ</h1>
                     <div  className={styles.slideStyles} >
                           <img width={1400} height={500}  src={slides[parentData][currentIndex]}/> 
             

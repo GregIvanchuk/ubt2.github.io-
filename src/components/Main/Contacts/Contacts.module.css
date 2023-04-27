@@ -7,39 +7,32 @@
 }
 .content{
     display: flex;
+    flex-direction:column;
     align-items: center;
-    gap: 200px;
+    margin-top: 120px;
    
 }
-@media(max-width:1130px){
+/* @media(max-width:1130px){
     .content{
         display: flex;
         align-items: center;
         gap: 100px;
        
     }
-}
-@media(max-width:1000px){
+} */
+/* @media(max-width:1000px){
     .content{
         flex-direction: column-reverse;
         gap: 0px;
     }
     
-}
+} */
 .contWrapper{
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: rgb(96, 96, 96);
-}
-.contWrapper p {
-    color: rgb(135, 135, 0);
-    font-size: 18px;
-}
-.contWrapper a {
-    color: rgb(135, 135, 0);
-    text-decoration: none;
-    font-size: 18px;
 }
 .linkSocial img {
     filter: brightness(0) 
@@ -47,30 +40,59 @@
 .contWrapper a:hover{
     color: blue;
 }
+.greyBlock{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 320px;
+    background-color: rgb(13, 13, 13);
+}
+.greyBlock:hover {
+    background-color:#fde910;
+    color: black;
+}
+.greyBlock:hover h1 {
+    color: black;
+}
 .h1{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
     color: rgb(96, 96, 96);
-    margin-top:150px;
+   
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 185px;
+}
+.contact{
+    display: flex;
+    flex-direction: column
+}
+.contact a {
+    color: rgb(135, 135, 0);
+    text-decoration: none;
+    font-size: 18px;
 }
 form {
-    width: 600px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     gap:20px;
     align-items: center;
     justify-content: center;
     background-color:black;
-    margin-top:20px;
-    padding-top:40px;
     padding-bottom:100px;
 }
-@media(max-width:1000px){
-    form{
-        padding-top:0px;
-        padding-bottom:20px;
-    }
-}
 textarea{
-    width:600px;
+    width:1000px;
     height:100px;
     color:rgb(255, 255, 255);
     font-size:17px;
@@ -79,6 +101,49 @@ textarea{
     padding-left: 5px;
 
 }
+.item input {
+    width:1000px;
+    height:50px;
+    color:rgb(255, 255, 255);
+    font-size:17px;
+    background-color:rgb(22, 22, 22);
+    border:none;
+    padding-left: 5px;
+}
+@media(max-width:1050px){
+    .contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        
+    }
+    .contact{
+        display: flex;
+        flex-direction: column
+    }
+    form{
+        padding-top:0px;
+        padding-bottom:20px;
+    }
+    textarea{
+        width:700px;
+    }
+    .item input {
+        width:700px;
+        
+    }
+    .greyBlock{
+       width:700px;
+       height: 450px;
+    }
+    form {
+        width: 700px;
+        
+    }
+}
+
 .item{
     display:flex;
     flex-direction:column;
@@ -88,16 +153,42 @@ textarea{
 .item label{
     color:grey;
 }
-.item input {
-    width:600px;
-    height:50px;
-    color:rgb(255, 255, 255);
-    font-size:17px;
-    background-color:rgb(22, 22, 22);
-    border:none;
-    padding-left: 5px;
+
+@media(max-width:725px){
+    /* .item select,.item select option{
+        width:297px;
+    }; */
+    form{
+        width:420px;
+    }
+    textarea{
+        width:420px;  
+    }
+    .item input{
+        width:420px;
+    }
+    .greyBlock{
+        width:430px;
+        height: 400px;
+     }
+    .h1{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;       
+    }
+    .contacts{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width:300px;
+     }
+     .contact{
+         align-items: center;
+     }
 }
-@media(max-width:670px){
+
+@media(max-width:525px){
     /* .item select,.item select option{
         width:297px;
     }; */
@@ -110,9 +201,17 @@ textarea{
     .item input{
         width:320px;
     }
+    .greyBlock{
+        width:330px;
+        height: 500px;
+     }
     .h1{
-      font-size:25px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;       
     }
+    
 }
 
 /* @media(max-width:410px){ */

@@ -44,9 +44,9 @@
     border-radius: 10px;
   }
   
-  .leftArrowStyles {
-    position: absolute;
-    top: 50%;
+  /* .leftArrowStyles {
+    position: relative;
+    top: 400px;
     transform: translate(0, -50%);
     left: 10px;
     color: white;
@@ -54,38 +54,17 @@
     cursor: pointer;
   }
   .rightArrowStyles {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 400px;
     transform: translate(0, -50%);
     right: 14px;
     color: white;
     z-index: 2;
     cursor: pointer;
-  }
+  } */
   @media(max-width:820px){
     .slideStyles img  {
       height: 350px;
-    }
-    .leftArrowStyles {
-      display: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-      left: 10px;
-      color: white;
-      z-index: 2;
-      cursor: pointer;
-    }
-    .rightArrowStyles {
-      display: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(0, -50%);
-      right: 14px;
-      color: white;
-      z-index: 2;
-      cursor: pointer;
-      
     }
   }
   .dotsContainer {

@@ -1,6 +1,7 @@
 .yellowBlock2{
-    margin-top:-27px;
+    margin-top:-29px;
     flex-wrap: wrap;
+    font-size: 25px;
     color: #000;
     padding-top: 40px;
     display: flex;
@@ -25,7 +26,7 @@
     /* background-clip: text;
     -webkit-background-clip: text; /* для підтримки Safari та старіших браузерів */
     /*color: transparent; */
-   font-size: 90px;
+   font-size: 100px;
     color: black;
     font-weight: 900;
   }

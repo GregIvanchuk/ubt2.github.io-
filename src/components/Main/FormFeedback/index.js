@@ -11,6 +11,7 @@ function  FormFeedback({openForm}) {
     .then((response) => {
       if (response.status === 200) {
         alert('Form submitted successfully!');
+        openForm()
       } else {
         throw new Error(response.statusText);
       }

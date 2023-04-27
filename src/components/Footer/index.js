@@ -25,12 +25,12 @@ function Footer() {
            <div className={styles.secondBlock}>
             <h4>КОНТАКТИ</h4>
              <p>E-mail: nataligladii@gmail.com</p>
-             <p>Телефон:<a href="tel:+380937725057">+380 (93) 772-50-57</a></p>
+             <p>Телефон:  <a href="tel:+380937725057"> +380 (93) 772-50-57</a></p>
              <p>Графік роботи: Пн-Сб: 10 - 19</p>
            </div>
            <div className={styles.threeBlock}>
-             <a href='https://www.instagram.com/s.p.studio.ua/'><img width={45} height={45} src="/images/instagram.png" alt="" /></a>
-             <a href='https://www.facebook.com/profile.php?id=100088519397111'><img width={45} height={45} src="/images/facebook.png" alt="" /></a>
+             <a href='https://www.instagram.com/s.p.studio.ua/' target="_blank"><img width={45} height={45} src="/images/instagram.png" alt="" /></a>
+             <a href='https://www.facebook.com/profile.php?id=100088519397111' target="_blank"><img width={45} height={45} src="/images/facebook.png" alt="" /></a>
              <a><img width={45} height={45} src="/images/viber.png" alt="" /></a>
              <a><img width={45} height={45} src="/images/telegram.png" alt="" /></a>
            </div>
