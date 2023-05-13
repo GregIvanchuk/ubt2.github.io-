@@ -49,6 +49,8 @@
     height: 320px;
     background-color: rgb(13, 13, 13);
     border: #fde910 1px solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .greyBlock:hover {
     background-color:#fde910;
@@ -231,12 +233,12 @@ button{
     width: 300px;
     font-size: 17px;
     color: white;
-    background-color: rgb(135, 135, 0);
+    background-color:#fde910;
     border:none;
     color: black;
 }
 button:hover{
-    background-color: rgb(255, 255, 31);
+    background-color: rgb(163, 163, 15);
 }
    
 iframe{
