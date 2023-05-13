@@ -29,6 +29,7 @@
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 50px;
+    border: 1px #fde910 solid;
   }
   @media(max-width:1300px){
     .service{

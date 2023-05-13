@@ -104,7 +104,7 @@
       cursor: pointer;
     }
     .slideStyles img {
-      height: 450px;
+      height: 600px;
     }
   }
   @media(max-width:410px){
