@@ -63,7 +63,7 @@
     margin-left: 40px;
     margin-right: 40px;
     text-align: justify;
-    color: rgb(96, 96, 96);
+    color: white;
    
 }
 .contacts{
@@ -212,7 +212,9 @@ textarea{
         margin-left: 20px;
         margin-right: 20px;       
     }
-    
+    .contWrapper a {
+      font-size: 14px;
+    }
 }
 
 /* @media(max-width:410px){ */
