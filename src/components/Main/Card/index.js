@@ -5,7 +5,7 @@ import { Link as ScrollLink, scroller  } from "react-scroll";
 function Card(props) {
   const [parentData, setParentData] = useState(0)
   const slides=[
-    ["/images/slide1.jpg","/images/slide2.jpg","/images/slide3.jpg","/images/vit1.jpg","/images/bh1.jpg","/images/ch3.jpg",],
+    ["/images/Photos/pr44.jpg","/images/Photos/pr14.jpg","/images/Photos/pr47.jpg","/images/Photos/pr33.jpg","/images/Photos/pr37.jpg"],
     
   ]
   // ["/images/woman1.jpg","/images/woman2.jpg","/images/man.jpg",],
@@ -36,15 +36,6 @@ function Card(props) {
   /*-------------------------------------------------------------------------------------------------------*/
 
     const [catId, setCatId]=React.useState(0)
-    const PortItems = [{id:0, img:"/images/vit1.jpg", title: "ВІТАЛЬНІ", text: "Ми із задоволенням створимо новий приголомшливий дизайн інтер’єру для вашої вітальні з урахуванням усіх ваших побажань та міркувань, щоб він викликав тільки позитивні емоції."},
-                       {id:1, img:"/images/slide2.jpg", title: "СПАЛЬНІ", text: "Створимо дизайн для вашої спальні, щоб Вам було зручно і комфорно відпочивати і насолоджуватись затишною атмосферою. Адже спальня це місце де ми проводимо найбільше часу."},
-                       {id:2, img:"/images/ch1.jpg", title: "КУХНІ", text: "Незалежно від того, чи є це частиною житлового будинку чи квартири, добре структурована та оформлена кухня є життєво важливою для комфортного проживання незалежно від розміру."},
-                       {id:3, img:"/images/slide2.jpg", title: "КОРИДОР", text: "Шукаєте ідею створити новий або перетворити старий коридор? Довіртеся нашим винятково кваліфікованим дизайнерам та архітекторам, якщо ви прагнете досягти найкращих результатів."},
-                       {id:4, img:"/images/slide2.jpg", title: "ДИТЯЧІ", text: "Наші навички та професіоналізм дозволяють нам працювати над візуальним та функціональним вдосконаленням дитячих, ваші діти будуть приємно вражені."},
-                    //  {id:5, img:"/images/slide2.jpg", title: "КАБІНЕТ", text: "Наша дизайнерська студія часто займається реконструкцією та переробкою кабінету. Ми зможемо успішно перетворити ваш офіс у візуально привабливий центр ділової активності."},
-                    //  {id:6, img:"/images/slide2.jpg", title: "ВАННА КІМНАТА", text: "Ванна кімната – місце, де починається та закінчується кожен новий день. Оформлення даного приміщення може стати джерелом втілення Ваших бажань та наших сміливих креативних ідей."},
-                    //  {id:7, img:"/images/slide2.jpg", title: "ДИЗАЙН ЕКСТЕР'ЄРУ", text: "Ми із задоволенням створимо новий приголомшливий дизайн інтер’єру для вашої вітальні з урахуванням усіх ваших побажань та міркувань, щоб він викликав тільки позитивні емоції."},
-                    ]
                      const handleClick = (event) =>{
                       setParentData(event.target.dataset.buttonNumber);   
                      }
@@ -65,7 +56,7 @@ function Card(props) {
             <h1>НАШІ РОБОТИ</h1>
             </section>
                     <div  className={styles.slideStyles} >
-                          <img width={1400} height={500}  src={slides[parentData][currentIndex]}/> 
+                          <img width={1000} height={500}  src={slides[parentData][currentIndex]}/> 
                     </div>
                     <div  className={styles.arrows} >
                           <img onClick={goToPrevios} className={styles.leftArrowStyles} height={32} width={32} src="/images/rarrow.png"  alt="" />
@@ -77,7 +68,7 @@ function Card(props) {
                     </div>
                 </div>
                 </section>
-       <div className={styles.ourProjects}>
+            <div className={styles.ourProjects}>
                     <div className={styles.ourItems}>
                     
                    {/* { PortItems.map((item,id) =>
@@ -88,57 +79,60 @@ function Card(props) {
                      <p>{item.text}</p>
                      </div>
                      <ScrollLink onClick={handleClickSlider}  to="/slider" >  <button onClick={(event)=>handleClick(event)} data-button-number={id} >Переглянути</button></ScrollLink>
-                    </div>     
+                     
                     )}     */}
 
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>ВСІ ПРОЕКТИ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.jpg" />
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №1</h3>
+                      <Link to="/pr1"><button >Переглянути</button></Link>
+                      </div>
                      </div>
-                      <Link to="/gallery"><button >Переглянути</button></Link>
-                    </div>    
+                      
+                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>ВІТАЛЬНІ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.png"/>
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №2</h3>
+                      <Link to="/pr2"><button >Переглянути</button></Link>
+                      </div>
                      </div>
-                      <Link to="/galleryvit"><button >Переглянути</button></Link>
-                    </div>    
+                      
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>СПАЛЬНІ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr31.jpg" />
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №3</h3>
+                      <Link to="/pr3"><button >Переглянути</button></Link>
+                      </div>
                      </div>
-                      <Link to="/gallerybd"><button >Переглянути</button></Link>
-                    </div>    
+                      
+                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>КУХНІ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg"  />
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №4</h3>
+                      <Link to="/pr4"><button >Переглянути</button></Link>
+                      </div>
                      </div>
-                      <Link to="/gallerykch"><button >Переглянути</button></Link>
-                    </div>    
+                     
+                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>КАБІНЕТИ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.png"/>
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №5</h3>
+                      <Link to="/pr5"><button >Переглянути</button></Link>
                      </div>
-                      <Link to="/gallerych"><button >Переглянути</button></Link>
-                    </div>    
+                     </div>
+          
+                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/slide2.jpg" />
-                      <div className={styles.text}>
-                      <h3>САНВУЗЛИ</h3>
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil consequuntur, minima tenetur nemo qui neque doloribus voluptatum, quis mollitia quam provident quibusdam itaque culpa corrupti magni! Veniam, ratione nisi.</p>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr61.jpg" />
+                      <div className={styles.content}>
+                      <h3>ПРОЕКТ №6</h3>
+                      <Link to="/pr6"><button >Переглянути</button></Link>
+                      </div>
                      </div>
-                      <Link to="/gallerybth"><button >Переглянути</button></Link>
-                    </div>     
                     </div>
                   </div>
                       

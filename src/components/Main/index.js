@@ -21,16 +21,10 @@ function Main({ handleApp }) {
                     <MainSlider />
                 </section>
                 <div className="container">
-                    <section id="services">
                         <Services />
-                    </section>
-                    <section id="projects">
                         <Card callback={handleMain} />
-                    </section>
-                    <section id="about">
                         <ForUs /> 
-                        </section>
-                    <section id="contacts"><Contacts/></section>
+                    <Contacts/>
                     {/* <SecondSlider />  */}
                 </div>
             </main>

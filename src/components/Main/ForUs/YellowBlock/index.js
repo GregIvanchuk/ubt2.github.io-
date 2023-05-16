@@ -59,7 +59,7 @@ const YellowBlock = () => {
   return (
     <div className={styles.yellowBlock2} ref={yellowBlockRef}>
       <div className={styles.yellowBlock2Content}>
-        <img height={50} width={50} src="/images/t1.png" alt="" />
+        <img height={50} width={50} src="/images/projects.png" alt="" />
         <h1>{shouldAnimate ? <AnimatedNumber number={count+30} /> : Math.floor(count)}</h1>
         <h4>ПРОЕКТИ ЩОРІЧНО</h4>
       </div>

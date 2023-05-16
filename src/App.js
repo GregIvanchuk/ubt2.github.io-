@@ -8,14 +8,15 @@ import Portfolio from "./components/Main/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./components/Main/Services";
 import ForUs from "./components/Main/ForUs";
-import Gallery from "./components/Main/Gallery";
+
 import Contacts from "./components/Main/Contacts";
 import Card from "./components/Main/Card";
-import GalleryKitchen from "./components/Main/GalleryKitchen";
-import GalleryBadroom from "./components/Main/GalleryBadroom";
-import GalleryBathroom from "./components/Main/GalleryBathroom";
-import GalleryChildRoom from "./components/Main/GalleryChildRoom";
-import GalleryVitals from "./components/Main/GalleryVitals";
+import Pr1 from "./components/Main/Pr1";
+import Pr2 from "./components/Main/Pr2";
+import Pr3 from "./components/Main/Pr3";
+import Pr4 from "./components/Main/Pr4";
+import Pr5 from "./components/Main/Pr5";
+import Pr6 from "./components/Main/Pr6";
 
 function App() {
     // const [parentData, setParentData] = useState(0);
@@ -37,33 +38,33 @@ function App() {
                         />
                         <Route
                             exact
-                            path="/gallery"
-                            element={<Gallery/>}
+                            path="/pr1"
+                            element={<Pr1/>}
                         />
                         <Route
                             exact
-                            path="/galleryvit"
-                            element={<GalleryVitals/>}
+                            path="/pr2"
+                            element={<Pr2/>}
                         />
                         <Route
                             exact
-                            path="/gallerych"
-                            element={<GalleryChildRoom/>}
+                            path="/pr3"
+                            element={<Pr3/>}
                         />
                         <Route
                             exact
-                            path="/gallerybth"
-                            element={<GalleryBathroom/>}
+                            path="/pr4"
+                            element={<Pr4/>}
                         />
                         <Route
                             exact
-                            path="/gallerybd"
-                            element={<GalleryBadroom/>}
+                            path="/pr5"
+                            element={<Pr5/>}
                         />
                         <Route
                             exact
-                            path="/gallerykch"
-                            element={<GalleryKitchen/>}
+                            path="/pr6"
+                            element={<Pr6/>}
                         />
                         {/* <Route
                             exact
