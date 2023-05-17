@@ -2,7 +2,7 @@ import styles from './Pr2.module.css';
 import {Link} from "react-router-dom";
 import React from 'react';
 function Pr2() {
-    const img = ["/images/Photos/pr62.jpg","/images/Photos/pr63.jpg","/images/Photos/pr64.jpg","/images/Photos/pr65.jpg","/images/Photos/pr66.jpg","/images/Photos/pr67.jpg","/images/Photos/pr68.jpg"]
+    const img = ["/images/Photos/pr22.PNG","/images/Photos/pr23.PNG","/images/Photos/pr24.PNG","/images/Photos/pr25.PNG","/images/Photos/pr26.PNG","/images/Photos/pr27.PNG","/images/Photos/pr28.PNG","/images/Photos/pr29.PNG"]
   return (
     <>
     <div className={styles.wrapper}>
