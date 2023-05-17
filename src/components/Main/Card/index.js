@@ -83,7 +83,7 @@ function Card(props) {
                     )}     */}
 
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.jpg" />
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.JPG" />
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №1</h3>
                       <Link to="/pr1"><button >Переглянути</button></Link>
@@ -92,7 +92,7 @@ function Card(props) {
                       
                     
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.png"/>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.PNG"/>
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №2</h3>
                       <Link to="/pr2"><button >Переглянути</button></Link>
@@ -118,7 +118,7 @@ function Card(props) {
                      
                     
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.png"/>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.PNG"/>
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №5</h3>
                       <Link to="/pr5"><button >Переглянути</button></Link>
