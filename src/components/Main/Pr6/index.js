@@ -2,7 +2,7 @@ import styles from './Pr6.module.css';
 import {Link} from "react-router-dom";
 import React from 'react';
 function  Pr6() {
-    const img = ["/images/Photos/pr22.png","/images/Photos/pr23.png","/images/Photos/pr24.png","/images/Photos/pr25.png","/images/Photos/pr26.png","/images/Photos/pr27.png","/images/Photos/pr28.png","/images/Photos/pr29.png",]
+    const img = ["/images/Photos/pr62.jpg","/images/Photos/pr63.jpg","/images/Photos/pr64.jpg","/images/Photos/pr65.jpg","/images/Photos/pr66.jpg","/images/Photos/pr67.jpg","/images/Photos/pr68.jpg"]
   return (
     <>
     <div className={styles.wrapper}>

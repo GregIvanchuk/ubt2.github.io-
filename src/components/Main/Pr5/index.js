@@ -2,7 +2,7 @@ import styles from './Pr5.module.css';
 import {Link} from "react-router-dom";
 import React from 'react';
 function Pr5() {
-    const img = ["/images/Photos/pr11.jpg","/images/Photos/pr32.jpg","/images/Photos/pr33.jpg","/images/Photos/pr34.jpg","/images/Photos/pr35.jpg","/images/Photos/pr36.jpg","/images/Photos/pr37.jpg","/images/Photos/pr38.jpg","/images/Photos/pr39.jpg"]
+    const img = ["/images/Photos/pr52.PNG","/images/Photos/pr53.PNG","/images/Photos/pr54.PNG","/images/Photos/pr55.PNG","/images/Photos/pr56.PNG","/images/Photos/pr57.PNG"]
   return (
     <>
     <div className={styles.wrapper}>
