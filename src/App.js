@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Main from "./components/Main";
 // import MainSlider from './components/MainSlider';
 import Footer from "./components/Footer";
-import Portfolio from "./components/Main/Portfolio";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Services from "./components/Main/Services";
 import ForUs from "./components/Main/ForUs";
