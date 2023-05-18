@@ -12,7 +12,7 @@
     background-color: black;
 }
 .header_line{
-    background-color: yellow;
+    background-color: #eed603dc;
     width: 90%;
     height: 1px;
     margin-top: 10px;
@@ -134,8 +134,6 @@
     }
 
 }
-
-
 .item1,.item2,.item3,.item4,.item5 ul{
     display: flex;
     flex-direction: column;
@@ -144,7 +142,7 @@
 
 }
 .item1:hover,.item2:hover,.item3:hover,.item4:hover,.item5:hover{
-    background-color: yellow;
+    background-color: #eed603dc;
     color: black;
 }
 

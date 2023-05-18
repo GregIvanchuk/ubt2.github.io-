@@ -34,7 +34,7 @@ function Contacts() {
             </div>
             <div className={styles.contact}>
             <h2>ГРАФІК РОБОТИ:</h2>
-            <a>Пн-Сб: 10 - 19</a>
+            <a>Пн-Сб: 09:30 - 18:00</a>
             </div>
             <div className={styles.contact}>
             <h2>ТЕЛЕФОН:</h2>
