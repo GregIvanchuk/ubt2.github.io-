@@ -50,9 +50,10 @@
     font-weight: bold;
   }
   .innerSl button{
+    font-size: 18px;
     cursor: pointer;
-    width: 180px;
-    height: 45px;
+    width: 220px;
+    height: 50px;
     color: black;
     background-color: #fde910;
     border: none;
@@ -89,8 +90,7 @@
       cursor: pointer;
       width: 180px;
       height: 40px;
-      font-size:12px;
-      
+      font-size:14px;
     }
     .leftArrowStyles {
       display: none;
