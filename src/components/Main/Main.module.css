@@ -1,5 +1,5 @@
 main {
-    width: 100%;
+    max-width: 1800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,95 +9,11 @@ main {
     padding-bottom: 0px; /* 300px - висота футера */
     box-sizing: border-box;
     flex-shrink: 1;
+    margin: 0 auto;
 }
 .container{
-  max-width:1600px;
+  max-width:1800px;
 }
-.yellowBlock{
-    padding-left: 40px;
-    padding-right: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 120px;
-    max-width: 3000px;
-    background-color:#fde910 ;
-    color: #000;
-    gap: 100vh;
-    white-space: nowrap;
-  }
-  .yellowBlock h1 {
-    white-space: nowrap;
-    color: black;
-  }
-  @media(max-width:2000px){
-    .yellowBlock{
-      
-      gap: 60vh;
-    }
-  }
-  @media(max-width:1700px){
-  .yellowBlock{
-    gap: 68vh;
-  }
-}
-@media(max-width:1300px){
-  .yellowBlock{
-    gap: 25vh;
-  }
-}
-@media(max-width:1100px){
-  .yellowBlock{
-    gap: 14vh;
-  }
-}
-@media(max-width:800px){
-  .yellowBlock{
-    gap: 10vh;
-  }
-}
-@media(max-width:1100px){
-  .yellowBlock h1{
-   font-size: 25px;
-  }
-}
-@media(max-width:680px){
-  .yellowBlock{
-    padding-left: 10px;
-    padding-right: 10px;
-    }
-  .yellowBlock h1{
-   font-size: 17px;
-  }
-}
-  .detail{
-    width: 180px;
-    height: 40px;
-    color: white;
-    background-color: black;
-    border: none;
-  }
-  .detail:hover{
-    color: black;
-    background-color: white;
-    cursor: pointer;
-  }
-  /*------------------------------------------------------*/
-  .projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .projects h1{
-    margin-bottom: -20px;
-  }
-  .ourProjects{
-    padding-top: 40px;
-    display: flex;
-    gap: 40px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
 
-  }
+  
+  /*------------------------------------------------------*/

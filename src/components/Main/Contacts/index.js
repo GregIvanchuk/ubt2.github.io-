@@ -25,6 +25,7 @@ function Contacts() {
     <div className={styles.wrapper}>
     <div className={styles.content}>
         <div className={styles.contWrapper}>
+        <section id='home'> </section>
             {/* <h1 className=''>КОНТАКТИ</h1> */}
             <div className={styles.contacts}  >
               <div className={styles.contact}>
@@ -45,13 +46,13 @@ function Contacts() {
                 <img src="/images/facebook.png" alt="" />
             </div> */}
         </div>
- 
+       
     <form onSubmit={handleSubmit(onSubmit)}>
-    <section id='home'>
+   
       <div className={styles.greyBlock} >
     <h1 className={styles.h1}>Шановний клієнте! Якщо ви маєте задум ремонту своєї квартири або офісу, то наша компанія готова допомогти вам з цим завданням. Ми надаємо повний спектр послуг, що пов'язані з ремонтом, дизайном інтер'єру, а також забезпечуємо авторський нагляд за ремонтом об'єкта. Залиште, будь ласка, заявку на нашому сайті і наші професіонали зв'яжуться з вами в найближчий час для проведення консультації.</h1>
     </div>
-    </section>
+  
 
       {/* <div className={styles.item}>
   <label htmlFor="category"></label>
@@ -88,7 +89,6 @@ function Contacts() {
       <button type="submit">Надіслати</button>
     </form>
     </div>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2683.669333932848!2d24.00014325106172!3d49.82266719322197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ae783986b17b1%3A0x13b67269772486bf!2z0YPQuy4g0JPQtdC90LXRgNCw0LvQsCDQp9GD0L_RgNGL0L3QutC4LCAxMTksINCb0YzQstC-0LIsINCb0YzQstC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1sru!2sua!4v1684261850027!5m2!1sru!2sua" width={1460} height={200} />
     </div>
     </>
   );

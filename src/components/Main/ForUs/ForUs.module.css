@@ -3,19 +3,21 @@
 }
 .aboutUs{
     margin-top: 60px;
-    max-width: 100%;
+    max-width: 1800px;
     background-color: rgb(18, 18, 18);
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
     flex-shrink: 1;
   }
   .aboutUs img {
-  width: 45%;
+  width: 44%;
   }
   .aboutUsContent {
     padding-top:60px;
     width: 50%;
-    margin-left: 115px;
-    margin-right: 115px;
+    margin-left: 40px;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,122 +47,32 @@
     width: 100%;
   }
   .regalText{
+    position: relative;
     display: flex;
-    gap:70vh;
-  }
-  @media (max-width:3000px){
-    .regalText{
-      display: flex;
-      gap:120vh;
-    }
-  }
-  @media (max-width:2390px){
-    .regalText{
-      display: flex;
-      gap:80vh;
-    }
-  }
-  @media (max-width:1896px){
-    .regalText{
-      display: flex;
-      gap:50vh;
-    }
-  }
-  @media (max-width:1367px){
-    .regalText{
-      display: flex;
-      gap:30vh;
-    }
-  }
-  @media (max-width:1280px){
-    .regalText{
-      display: flex;
-      gap:25vh;
-    }
-  }
-  @media (max-width:1194px){
-    .regalText{
-      display: flex;
-      gap:18vh;
-    }
-  }
-  @media (max-width:1073px){
-    .regalText{
-      display: flex;
-      gap:30vh;
-    }
-    .aboutUsContent {
-      margin-left: 40px;
-      margin-right: 40px;
-    }
-  }
-  @media (max-width:1000px){
-    .regalText{
-      display: flex;
-      gap:25vh;
-    }
-  }
-  @media (max-width:914px){
-    .regalText{
-      display: flex;
-      gap:20vh;
-    }
+    gap:55vh;
   }
   @media (max-width:831px){
     .aboutUs img {
       width: 100%;
       }
       .aboutUsContent {
-        width: 80%;
-        margin-left: 35px;
+        justify-content: center;
+        width: 85%;
       }
-    .regalText{
-      display: flex;
-      gap:45vh;
-    }
     .aboutUs{
       flex-direction: column;
       gap: 20px;
-    }
-  }
-  @media (max-width:728px){
-    .regalText{
-      display: flex;
-      gap:40vh;
-    }
-  }
-  @media (max-width:670px){
-    .regalText{
-      display: flex;
-      gap:35vh;
-    }
-  }
-  @media (max-width:616px){
-    .regalText{
-      display: flex;
-      gap:30vh;
     }
   }
   @media (max-width:558px){
     .aboutUs{
       margin-top: 30px;
     }
-    .regalText{
-      display: flex;
-      gap:25vh;
-    }
+    
   }
-  @media (max-width:504px){
-    .regalText{
-      display: flex;
-      gap:20vh;
-    }
-  }
-  @media (max-width:504px){
-    .regalText{
-      display: flex;
-      gap:15vh;
-    }
+  .proc {
+    position: absolute;
+    right: 0;
   }
   .regalLine{
     width: 100%;

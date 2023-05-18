@@ -2,6 +2,7 @@ footer{
     position: relative;
     bottom:0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -10,11 +11,12 @@ footer{
 }
 .footer_container{
     margin-top:50px;
-    width:1500px;
+    max-width:1800px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 20px;
+    gap: 300px;
 }
 .firstBlock {
     display: flex;
@@ -77,9 +79,28 @@ footer{
   display: flex;
   gap:10px
 }
+@media(max-width:1400px){
+    .footer_container{
+       gap: 100px;
+    }
+}
+@media(max-width:1200px){
+    .footer_container{
+       gap: 50px;
+    }
+}
 @media(max-width:900px){
     .footer_container{
        flex-direction: column;
        gap: 20px;
     }
+    .logo_promo h3 {
+        font-size: 30px;
+    }
+    .logo_promo h4 {
+        font-size: 10px;
+    }
+}
+iframe{
+    width: 99.5%;
 }

@@ -1,4 +1,4 @@
-import HowWEWork from '../HowWeWork';
+import HowWEWork from './HowWeWork';
 import styles from './ForUs.module.css';
 import YellowBlock from './YellowBlock';
 const ForUs = () =>{
@@ -20,14 +20,14 @@ const ForUs = () =>{
                         <div className={styles.regal}>
                           <div className={styles.regalText}>
                             <p>Виконані завдання</p>
-                            <p>100%</p>
+                            <p className={styles.proc}>100%</p>
                           </div>
                           <div className={styles.regalLine}></div>
                         </div>
                         <div className={styles.regal}>
                           <div className={styles.regalText}>
                             <p>Задоволені клієнти</p>
-                            <p>99%</p>
+                            <p className={styles.proc}>99%</p>
                           </div>
                           <div className={styles.regalLine}></div>
                         </div>

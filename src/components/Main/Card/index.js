@@ -89,8 +89,6 @@ function Card(props) {
                       <Link to="/pr1"><button >Переглянути</button></Link>
                       </div>
                      </div>
-                      
-                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.PNG"/>
                       <div className={styles.content}>
@@ -98,7 +96,6 @@ function Card(props) {
                       <Link to="/pr2"><button >Переглянути</button></Link>
                       </div>
                      </div>
-                      
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr31.jpg" />
                       <div className={styles.content}>
@@ -106,8 +103,6 @@ function Card(props) {
                       <Link to="/pr3"><button >Переглянути</button></Link>
                       </div>
                      </div>
-                      
-                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg"  />
                       <div className={styles.content}>
@@ -115,8 +110,6 @@ function Card(props) {
                       <Link to="/pr4"><button >Переглянути</button></Link>
                       </div>
                      </div>
-                     
-                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.PNG"/>
                       <div className={styles.content}>
@@ -124,8 +117,6 @@ function Card(props) {
                       <Link to="/pr5"><button >Переглянути</button></Link>
                      </div>
                      </div>
-          
-                    
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr61.jpg" />
                       <div className={styles.content}>

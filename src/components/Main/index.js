@@ -21,11 +21,11 @@ function Main({ handleApp }) {
                     <MainSlider />
                 </section>
                 <div className="container">
-                        <Services />
+                        <Services /> 
                         <Card callback={handleMain} />
                         <ForUs /> 
                     <Contacts/>
-                    {/* <SecondSlider />  */}
+                    {/* {/* <SecondSlider />  */}
                 </div>
             </main>
         </>
