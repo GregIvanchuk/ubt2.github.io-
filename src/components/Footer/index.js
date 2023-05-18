@@ -27,7 +27,7 @@ function Footer() {
             <h4>КОНТАКТИ</h4>
              <p>E-mail: <a href="mailto:spstudiolviv@gmail.com"target="_blank">spstudiolviv@gmail.com</a></p>
              <p>Телефон:  <a href="tel:+380937725057"> +380 (93) 772-50-57</a></p>
-             <p>Графік роботи: Пн-Сб: 10 - 19</p>
+             <p>Графік роботи: Пн-Сб: 09:30 - 18:00</p>
            </div>
            <div className={styles.threeBlock}>
              <a href='https://www.instagram.com/s.p.studio.ua/' target="_blank"><img width={45} height={45} src="/images/instagram.png" alt="instagram" /></a>
