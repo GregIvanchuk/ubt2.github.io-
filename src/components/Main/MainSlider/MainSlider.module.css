@@ -94,15 +94,24 @@
     }
     .leftArrowStyles {
       display: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%);
+      left: 10px;
+      color: white;
+      z-index: 2;
+      cursor: pointer;
     }
     .rightArrowStyles {
       display: none;
+      position: absolute;
       top: 50%;
       transform: translate(0, -50%);
       right: 14px;
       color: white;
       z-index: 2;
       cursor: pointer;
+      
     }
     .slideStyles img {
       height: 600px;

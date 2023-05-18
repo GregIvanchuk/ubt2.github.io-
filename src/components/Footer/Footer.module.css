@@ -64,7 +64,7 @@ footer{
 .firstBlock  button {
     cursor: pointer;
     width: 220px;
-    height: 40px;
+    height: 50px;
     color: white;
     background-color:black; 
     border: none;
@@ -74,6 +74,7 @@ footer{
 }
 .secondBlock {
     color: black;
+    font-size: 25px;
 }
 .threeBlock {
   display: flex;
@@ -100,7 +101,20 @@ footer{
     .logo_promo h4 {
         font-size: 10px;
     }
+    .secondBlock {
+        color: black;
+        font-size: 14px;
+    }
 }
 iframe{
     width: 99.5%;
+}
+@media(max-width:400px){
+    iframe{
+        width: 99%;
+    }
+    .footer_container{
+        margin-left:0px ;
+        margin-right:0px ;
+    }
 }

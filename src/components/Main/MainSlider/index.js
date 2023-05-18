@@ -49,10 +49,10 @@ function MainSlider() {
                            <button onClick={() => openForm()}>Передзвоніть мені</button>
                            </div>
                         <div className={styles.leftArrowStyles} onClick={goToPrevios}>
-                          <img height={22} width={22} src="/images/rarrow.png"  alt="" />
+                          <img height={35} width={35} src="/images/rarrow.png"  alt="" />
                           </div>
                         <div className={styles.rightArrowStyles} onClick={goToNext}> 
-                        <img height={22} width={22} src="/images/larrow.png" alt="" />
+                        <img height={35} width={35} src="/images/larrow.png" alt="" />
                           </div>
                     </div>
                     <div  className={styles.dotsContainer}>

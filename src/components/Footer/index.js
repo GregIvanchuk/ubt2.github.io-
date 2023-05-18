@@ -30,10 +30,10 @@ function Footer() {
              <p>Графік роботи: Пн-Сб: 09:30 - 18:00</p>
            </div>
            <div className={styles.threeBlock}>
-             <a href='https://www.instagram.com/s.p.studio.ua/' target="_blank"><img width={45} height={45} src="/images/instagram.png" alt="instagram" /></a>
-             <a href='https://www.facebook.com/profile.php?id=100088519397111' target="_blank"><img width={45} height={45} src="/images/facebook.png" alt="facebook" /></a>
-             <a href="tel:+380937725057" ><img width={45} height={45} src="/images/viber.png" alt="viber" /></a>
-             <a href='https://t.me/Djozef30' target="_blank" ><img width={45} height={45} src="/images/telegram.png" alt="telegram" /></a>
+             <a href='https://www.instagram.com/s.p.studio.ua/' target="_blank"><img width={50} height={50} src="/images/instagram.png" alt="instagram" /></a>
+             <a href='https://www.facebook.com/profile.php?id=100088519397111' target="_blank"><img width={50} height={50} src="/images/facebook.png" alt="facebook" /></a>
+             <a href="tel:+380937725057" ><img width={50} height={50} src="/images/viber.png" alt="viber" /></a>
+             <a href='https://t.me/Djozef30' target="_blank" ><img width={55} height={55} src="/images/telegram.png" alt="telegram" /></a>
            </div>
         </div>
     </footer>
