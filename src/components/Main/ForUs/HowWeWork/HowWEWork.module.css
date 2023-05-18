@@ -12,7 +12,7 @@
     background-color: black;
 }
 .header_line{
-    background-color: #eed603dc;
+    background-color: #fde910;
     width: 90%;
     height: 1px;
     margin-top: 10px;
@@ -142,7 +142,7 @@
 
 }
 .item1:hover,.item2:hover,.item3:hover,.item4:hover,.item5:hover{
-    background-color: #eed603dc;
+    background-color: #fde910;
     color: black;
 }
 

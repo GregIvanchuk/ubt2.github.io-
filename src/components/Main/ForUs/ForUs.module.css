@@ -51,6 +51,10 @@
     display: flex;
     gap:55vh;
   }
+  .proc {
+    position: absolute;
+    right: 40px;
+  }
   @media (max-width:831px){
     .aboutUs img {
       width: 100%;
@@ -68,14 +72,14 @@
     .aboutUs{
       margin-top: 30px;
     }
-    
+    .proc {
+      position: absolute;
+      right: 20px;
+    }
   }
-  .proc {
-    position: absolute;
-    right: 0;
-  }
+  
   .regalLine{
-    width: 100%;
+    width: 95%;
     background-color:#fde910 ;
     height: 5px;
   }
