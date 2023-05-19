@@ -6,18 +6,11 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 1800px;
   }
   .ourServices{
     font-size: 27px;
   }
-  .services{
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  
   .service{
     background-color: #111111;
     cursor: pointer;
@@ -25,13 +18,53 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 600px;
-    height: 500px;
+    width: 700px;
+    height: 600px;
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 50px;
     padding-right: 50px;
     border: 1px #fde910 solid;
+  }
+  .services{
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .service p {
+    font-size: 25px;
+    text-align: justify;
+  }
+  @media(max-width:1800px){
+   
+    .services{
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .service{
+      background-color: #111111;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      width: 600px;
+      height: 500px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      padding-left: 50px;
+      padding-right: 50px;
+      border: 1px #fde910 solid;
+    }
+    .service p {
+      font-size: 22px;
+      text-align: justify;
+    }
   }
   @media(max-width:1300px){
     .service{
@@ -41,10 +74,7 @@
   .service h3 {
     font-size: 25px;
   } 
-  .service p {
-    font-size: 20px;
-    text-align: justify;
-  }
+  
   .service p {
     display: flex;
     flex-direction: column;

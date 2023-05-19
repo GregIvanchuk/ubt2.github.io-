@@ -3,7 +3,7 @@
 }
 .aboutUs{
     margin-top: 60px;
-    max-width: 1800px;
+    width: 100%;
     background-color: rgb(18, 18, 18);
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
     padding-bottom: 40px;
   }
   .aboutUsContent p {
-    font-size: 18px;
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     text-align: justify;

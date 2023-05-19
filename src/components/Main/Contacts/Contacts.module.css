@@ -45,7 +45,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
     height: 220px;
     background-color: rgb(13, 13, 13);
     padding-top: 20px;
@@ -145,7 +144,6 @@ textarea{
         
     }
 }
-
 .item{
     display:flex;
     flex-direction:column;

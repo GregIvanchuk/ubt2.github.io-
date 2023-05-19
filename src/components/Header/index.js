@@ -1,5 +1,5 @@
 import styles from './Header.module.css';
-import React from "react";
+import React, {useEffect,useState} from "react";
 import { Helmet } from 'react-helmet';
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, scroller  } from "react-scroll";
@@ -7,6 +7,24 @@ import { Link as ScrollLink, scroller  } from "react-scroll";
 function Header() {
   const [activeItem, setActiveItem] = React.useState(0);
   let  [open,setOpen] = React.useState("true")
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const scrollThreshold = 50;
+  const handleScroll = () => {
+    const currentPosition = window.pageYOffset;
+    if (currentPosition < scrollPosition && isVisible) {
+      setIsVisible(false);
+    } else if (currentPosition > scrollPosition && !isVisible) {
+      setIsVisible(true);
+    }
+    setScrollPosition(currentPosition);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isVisible, scrollPosition]);
     let openHandler= () => {
         setOpen(!open);
       }
@@ -54,7 +72,7 @@ function Header() {
       }
   return (
     <>
-      <header className={styles.header}>
+      <header className={isVisible ? styles.header : ""}>
       <div className={styles.header_container}>
       <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>

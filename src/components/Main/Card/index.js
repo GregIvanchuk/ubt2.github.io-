@@ -82,48 +82,60 @@ function Card(props) {
                      
                     )}     */}
 
-                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+<Link to="/pr1">
+  <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.JPG" />
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №1</h3>
-                      <Link to="/pr1"><button >Переглянути</button></Link>
+                     <button >Переглянути</button>
                       </div>
                      </div>
-                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                     </Link>
+                     <Link to="/pr2"> 
+                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.PNG"/>
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №2</h3>
-                      <Link to="/pr2"><button >Переглянути</button></Link>
+                      <button >Переглянути</button>
                       </div>
                      </div>
+                     </Link>
+                     <Link to="/pr3">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr31.jpg" />
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №3</h3>
-                      <Link to="/pr3"><button >Переглянути</button></Link>
+                     <button >Переглянути</button>
                       </div>
                      </div>
-                    <div className={`${styles.ourItem} ${styles.ourItem1}`}>
+                     </Link>
+                     <Link to="/pr4">
+                      <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg"  />
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №4</h3>
-                      <Link to="/pr4"><button >Переглянути</button></Link>
+                      <button >Переглянути</button>
                       </div>
                      </div>
+                     </Link>
+                     <Link to="/pr5">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.PNG"/>
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №5</h3>
-                      <Link to="/pr5"><button >Переглянути</button></Link>
+                     <button >Переглянути</button>
                      </div>
                      </div>
+                     </Link>
+                     <Link to="/pr6">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr61.jpg" />
                       <div className={styles.content}>
                       <h3>ПРОЕКТ №6</h3>
-                      <Link to="/pr6"><button >Переглянути</button></Link>
+                      <button >Переглянути</button>
                       </div>
                      </div>
+                     </Link>
                     </div>
                   </div>
                       
