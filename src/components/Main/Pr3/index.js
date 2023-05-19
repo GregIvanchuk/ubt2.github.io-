@@ -6,9 +6,6 @@ function Pr3() {
   return (
     <>
     <div className={styles.wrapper}>
-    <section id="home">
-    <h1>----------</h1>
-    </section>
     <div className={styles.gallery}>
       {img.map((item,index) => <img key={index} className={styles.img} src={item}/>)}
     </div>

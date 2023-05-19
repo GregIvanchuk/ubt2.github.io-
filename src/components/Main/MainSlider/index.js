@@ -42,7 +42,7 @@ function MainSlider() {
 
             <div  className={styles.sliderStyles}>
                     <div  className={styles.slideStyles} >
-                          <img width={3000}  height={800}  src={slides[currentIndex].src}/> 
+                          <img width={3000}  height={1000}  src={slides[currentIndex].src}/> 
                           <div  className={styles.innerSl} >
                            <h1>{slides[currentIndex].title}</h1>
                            <h3>{slides[currentIndex].p}</h3>

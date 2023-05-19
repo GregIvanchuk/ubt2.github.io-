@@ -56,7 +56,7 @@ function Card(props) {
             <h1>НАШІ РОБОТИ</h1>
             </section>
                     <div  className={styles.slideStyles} >
-                          <img width={1000} height={500}  src={slides[parentData][currentIndex]}/> 
+                          <img width={1500} height={750}  src={slides[parentData][currentIndex]}/> 
                     </div>
                     <div  className={styles.arrows} >
                           <img onClick={goToPrevios} className={styles.leftArrowStyles} height={32} width={32} src="/images/rarrow.png"  alt="" />
