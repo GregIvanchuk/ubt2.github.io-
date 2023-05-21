@@ -184,6 +184,10 @@
       z-index: 2;
       cursor: pointer;
     }
+    .ourItem h3{
+      font-size: 25px;
+      line-height: 20px;
+    }
     .rightArrowStyles {
       /* display: none; */
      
@@ -197,7 +201,7 @@
       
     }
     .sliderStyles h1 {
-      font-size: 15px;
+      font-size: 18px;
     }
     
   }
