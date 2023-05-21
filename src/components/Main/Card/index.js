@@ -5,7 +5,7 @@ import { Link as ScrollLink, scroller  } from "react-scroll";
 function Card(props) {
   const [parentData, setParentData] = useState(0)
   const slides=[
-    ["/images/Photos/pr44.jpg","/images/Photos/pr14.JPG","/images/Photos/pr47.jpg","/images/Photos/pr33.jpg","/images/Photos/pr37.jpg"],
+    ["/images/Photos/pr44.jpg","/images/Photos/pr24.PNG","/images/Photos/pr47.jpg","/images/Photos/pr24.PNG","/images/Photos/pr37.jpg"],
     
   ]
   // ["/images/woman1.jpg","/images/woman2.jpg","/images/man.jpg",],
@@ -111,7 +111,7 @@ function Card(props) {
                      </Link>
                      <Link to="/pr4">
                       <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41v.PNG"  />
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41v.png"  />
                       <div className={styles.content}>
                       <h3>ЖК «Avalon Yard» 136 м²</h3>
                       <button >Переглянути</button>
@@ -129,7 +129,7 @@ function Card(props) {
                      </Link>
                      <Link to="/pr6">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg" />
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr62.jpg" />
                       <div className={styles.content}>
                       <h3>ЖК «Montreal House» 53 м²</h3>
                       <button >Переглянути</button>

@@ -10,8 +10,8 @@ function Pr4() {
     setItemClicked(!itemClicked)
     setItemIndex(index);
   };
-    const imgv = ["/images/Photos/pr41v.PNG","/images/Photos/pr42v.PNG","/images/Photos/pr43v.PNG","/images/Photos/pr44v.PNG"]
-    const img = ["/images/Photos/pr41.PNG","/images/Photos/pr42.PNG","/images/Photos/pr43.PNG","/images/Photos/pr44.PNG","/images/Photos/pr45.PNG","/images/Photos/pr46.PNG"]
+    const imgv = ["/images/Photos/pr41v.png","/images/Photos/pr42v.png","/images/Photos/pr43v.png","/images/Photos/pr44v.png"]
+    const img = ["/images/Photos/pr41.png","/images/Photos/pr42.png","/images/Photos/pr43.png","/images/Photos/pr44.png","/images/Photos/pr45.png","/images/Photos/pr46.png"]
   return (
     <>
     <div className={styles.wrapper}>
