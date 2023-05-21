@@ -86,7 +86,7 @@ function Card(props) {
   <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.JPG" />
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №1</h3>
+                      <h3>ЖК «Квіти Львова» 89 м²</h3>
                      <button >Переглянути</button>
                       </div>
                      </div>
@@ -95,7 +95,7 @@ function Card(props) {
                      <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr21.PNG"/>
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №2</h3>
+                      <h3>Таун Хаус 120 м²</h3>
                       <button >Переглянути</button>
                       </div>
                      </div>
@@ -104,34 +104,34 @@ function Card(props) {
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr31.jpg" />
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №3</h3>
+                      <h3>ЖК «Синергія» 95 м²</h3>
                      <button >Переглянути</button>
                       </div>
                      </div>
                      </Link>
                      <Link to="/pr4">
                       <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg"  />
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41v.PNG"  />
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №4</h3>
+                      <h3>ЖК «Avalon Yard» 136 м²</h3>
                       <button >Переглянути</button>
                       </div>
                      </div>
                      </Link>
                      <Link to="/pr5">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.PNG"/>
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr51.jpg"/>
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №5</h3>
+                      <h3> ЖК «Комфорт Таун» 59 м²</h3>
                      <button >Переглянути</button>
                      </div>
                      </div>
                      </Link>
                      <Link to="/pr6">
                     <div className={`${styles.ourItem} ${styles.ourItem1}`}>
-                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr61.jpg" />
+                      <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41.jpg" />
                       <div className={styles.content}>
-                      <h3>ПРОЕКТ №6</h3>
+                      <h3>ЖК «Montreal House» 53 м²</h3>
                       <button >Переглянути</button>
                       </div>
                      </div>

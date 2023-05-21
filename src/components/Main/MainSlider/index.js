@@ -9,9 +9,9 @@ function MainSlider() {
         setIsOpen(!isOpen);
       }
       const slides= [
-        {src:"/images/slide1.jpg"  ,title:"СТВОРЕННЯ ІНДИВІДУАЛЬНИХ ІНТЕР'ЄРІВ" ,p:"МИ ПРОЕКТУЄМО ДИВОВИЖНІ ІНТЕР'ЄРИ"},
-        {src:"/images/slide2.jpg"  ,title:"ПЕРСОЛІЗОВАНІ ІНТЕР'ЄРИ " ,p:"НАША КОМАНДА МОЖЕ ПЕРСОНАЛІЗУВАТИ ІСНУЮЧИЙ ІНТЕР'ЄР"},
-        {src:"/images/slide3.jpg"  ,title:"ВСІ ВИДИ ДИЗАЙНУ ІНТЕР'ЄРУ" ,p:"МИ ВПОРАЄМОСЯ З БУДЬ-ЯКИМИ ПОСТАВЛЕНИМИ ЗАВДАННЯМИ"},
+        {src:"/images/slide1.jpg"  ,title:"ДИЗАЙН, ЩО ВІДОБРАЖАЄ ОСОБИСТІСТЬ" },
+        {src:"/images/slide2.jpg"  ,title:"ІНДИВІДУАЛЬНИЙ ДИЗАЙН, ЯКИЙ ПРИВЕРТАЄ ПОГЛЯДИ" },
+        {src:"/images/slide3.jpg"  ,title:"ЯКІСНИЙ РЕМОНТ З ГАРАНТІЄЮ" },
       ];
         const [currentIndex, setcurrentIndex] = useState(0);
         useEffect(() => {
@@ -45,7 +45,6 @@ function MainSlider() {
                           <img width={3000}  height={1000}  src={slides[currentIndex].src}/> 
                           <div  className={styles.innerSl} >
                            <h1>{slides[currentIndex].title}</h1>
-                           <h3>{slides[currentIndex].p}</h3>
                            <button onClick={() => openForm()}>Передзвоніть мені</button>
                            </div>
                         <div className={styles.leftArrowStyles} onClick={goToPrevios}>

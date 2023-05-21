@@ -46,7 +46,6 @@
   .ourItem:hover {
     transform: translateY(-7px);
   }
-
   .ourItem p {
     font-size: 16px;
     margin-top: -3px;
@@ -56,7 +55,7 @@
   }
   .ourItem h3{
     font-size: 30px;
-    line-height: 15px;
+    line-height: 20px;
   }
  
   /* .ourItem h4{
