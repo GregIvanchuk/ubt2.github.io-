@@ -185,7 +185,7 @@
       cursor: pointer;
     }
     .ourItem h3{
-      font-size: 25px;
+      font-size: 23px;
       line-height: 20px;
     }
     .rightArrowStyles {
@@ -203,9 +203,7 @@
     .sliderStyles h1 {
       font-size: 18px;
     }
-    
   }
-  
   .dotsContainer {
     width: 1000px;
     height: 150px;

@@ -5,6 +5,13 @@ import React from "react";
 function Pr5() {
   const [itemIndex, setItemIndex] = React.useState(null);
   const [itemClicked, setItemClicked] = React.useState(false);
+  const [itemIndexV, setItemIndexV] = React.useState(null);
+  const [itemClickedV, setItemClickedV] = React.useState(false);
+ 
+  const funcV = (index) => {
+    setItemClickedV(!itemClickedV)
+    setItemIndexV(index);
+  };
 
   const func = (index) => {
     setItemClicked(!itemClicked)
@@ -36,11 +43,11 @@ function Pr5() {
             />
             </div>
           ))}
-           {imgv.map((item, index) => (
-            <div key={index} className={(itemIndex === index && itemClicked  )   ? styles.activeCont : styles.cont} ><img
-              onClick={() => func(index)}
+         {imgv.map((item, index) => (
+            <div key={index} className={(itemIndexV === index && itemClickedV  )   ? styles.activeCont : styles.cont} ><img
+              onClick={() => funcV(index)}
               key={index}
-              className={(itemIndex === index && itemClicked  ) ? styles.activeImgV : styles.imgV}
+              className={(itemIndexV === index && itemClickedV  ) ? styles.activeImgV : styles.imgV}
               src={item}
             />
             </div>

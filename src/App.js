@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Main from "./components/Main";
 // import MainSlider from './components/MainSlider';
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Services from "./components/Main/Services";
 import ForUs from "./components/Main/ForUs";
 
@@ -18,6 +18,15 @@ import Pr5 from "./components/Main/Pr5";
 import Pr6 from "./components/Main/Pr6";
 
 function App() {
+    const ScrollToTop = () => {
+        const location = useLocation();
+    
+        useEffect(() => {
+          window.scrollTo(0, 0);
+        }, [location]);
+    
+        return null;
+      };
     // const [parentData, setParentData] = useState(0);
     // const PullData = (data) => {
     //     setParentData(data);
@@ -26,6 +35,7 @@ function App() {
     return (
         <>
             <Router>
+            <ScrollToTop />
                 <Header />
                 {/* <MainSlider/> */}
                 <div className={styles.wrapper}>

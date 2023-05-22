@@ -5,11 +5,19 @@ import React from "react";
 function Pr4() {
   const [itemIndex, setItemIndex] = React.useState(null);
   const [itemClicked, setItemClicked] = React.useState(false);
+  const [itemIndexV, setItemIndexV] = React.useState(null);
+  const [itemClickedV, setItemClickedV] = React.useState(false);
+ 
+  const funcV = (index) => {
+    setItemClickedV(!itemClickedV)
+    setItemIndexV(index);
+  };
 
   const func = (index) => {
     setItemClicked(!itemClicked)
     setItemIndex(index);
   };
+ 
     const imgv = ["/images/Photos/pr41v.png","/images/Photos/pr42v.png","/images/Photos/pr43v.png","/images/Photos/pr44v.png"]
     const img = ["/images/Photos/pr41.png","/images/Photos/pr42.png","/images/Photos/pr43.png","/images/Photos/pr44.png","/images/Photos/pr45.png","/images/Photos/pr46.png"]
   return (
@@ -37,10 +45,10 @@ function Pr4() {
             </div>
           ))}
           {imgv.map((item, index) => (
-            <div key={index} className={(itemIndex === index && itemClicked  )   ? styles.activeCont : styles.cont} ><img
-              onClick={() => func(index)}
+            <div key={index} className={(itemIndexV === index && itemClickedV  )   ? styles.activeCont : styles.cont} ><img
+              onClick={() => funcV(index)}
               key={index}
-              className={(itemIndex === index && itemClicked  ) ? styles.activeImgV : styles.imgV}
+              className={(itemIndexV === index && itemClickedV  ) ? styles.activeImgV : styles.imgV}
               src={item}
             />
             </div>

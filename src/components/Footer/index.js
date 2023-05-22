@@ -32,8 +32,8 @@ function Footer() {
            <div className={styles.threeBlock}>
              <a href='https://www.instagram.com/s.p.studio.ua/' target="_blank"><img width={50} height={50} src="/images/instagram.png" alt="instagram" /></a>
              <a href='https://www.facebook.com/profile.php?id=100088519397111' target="_blank"><img width={50} height={50} src="/images/facebook.png" alt="facebook" /></a>
-             <a href="tel:+380937725057" ><img width={50} height={50} src="/images/viber.png" alt="viber" /></a>
-             <a href='https://t.me/Djozef30' target="_blank" ><img width={55} height={55} src="/images/telegram.png" alt="telegram" /></a>
+             <a href="viber://chat?number=+380937725057"><img width={50} height={50} src="/images/viber.png" alt="viber" /></a>
+             <a  href="https://t.me/+380937725057" target="_blank" ><img width={55} height={55} src="/images/telegram.png" alt="telegram" /></a>
            </div>
         </div>
     </footer>
