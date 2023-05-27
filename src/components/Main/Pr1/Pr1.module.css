@@ -64,7 +64,7 @@ z-index: 10000000;
       display: flex;
       justify-content: center;
       margin: 0 auto;
-      border: 1px #fde910 solid;
+      /* border: 1px #fde910 solid; */
       flex-shrink: 1;
     }
     .aboutUsContent {
@@ -268,6 +268,27 @@ z-index: 10000000;
         width:340px;
         height: 600px;
 }
+
+@media(max-width:490px){
+    .aboutUsContent{
+        padding-left: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+      /* width: 300px; */
+      align-items: flex-start;
+    }
+    .aboutUsContent {
+      text-align: start;
+      font-size: 20px;
+    } 
+    .aboutUsContent p {
+      margin-left: 0px;
+      margin-right: 0px;
+      font-size: 19px;
+      text-align: start;
+    }
+  }
+  
 
 }
 @media(max-width:400px) {
