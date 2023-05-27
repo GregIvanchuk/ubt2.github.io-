@@ -229,6 +229,11 @@ z-index: 10000000;
 }
 }
 @media(max-width:650px) {
+    .button {
+        width: 180px;
+        height: 45px;
+        font-size: 14px;
+       }
     .aboutUsContent p {
         font-size: 20px;
       }
@@ -243,14 +248,11 @@ z-index: 10000000;
         width:400px;
         height: 600px;
 }
-.button{
-    width: 180px;
-    height: 45px;
-    font-size: 15px;
-}
 }
 @media(max-width:550px) {
-    
+    .aboutUsContent {
+        padding-left: 10px;
+    }
     .img{
         height: 300px;
     }
@@ -266,13 +268,9 @@ z-index: 10000000;
         width:340px;
         height: 600px;
 }
+
 }
 @media(max-width:400px) {
-    .aboutUsContent p {
-        margin-left: 20px;
-        text-align: start;
-        font-size: 20px;
-      }
     .img{
         height: 250px;
     }

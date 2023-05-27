@@ -91,16 +91,16 @@ ul li , ul p {
       list-style: none;  
     }
     ul {
-        padding: 10px;
+        padding: 5px;
     }
     ul li , ul p {
-        font-size: 8px;
+        font-size: 10px;
     }
     .header_numder{
         font-size: 35px;
     }  
     .header_title{
-        font-size: 8px;
+        font-size: 9px;
     }
 
 }
@@ -109,16 +109,16 @@ ul li , ul p {
       list-style: none;  
     }
     ul {
-        padding: 7px;
+        padding: 4px;
     }
     ul li , ul p {
-        font-size: 8px;
+        font-size: 9px;
     }
     .header_numder{
         font-size: 30px;
     }  
     .header_title{
-        font-size: 8px;
+        font-size: 10px;
     }
 
 }
@@ -127,10 +127,10 @@ ul li , ul p {
       list-style: none;  
     }
     ul {
-        padding: 7px;
+        padding: 4px;
     }
     ul li , ul p {
-        font-size: 6px;
+        font-size: 8px;
     }
     .header_numder{
         font-size: 30px;
