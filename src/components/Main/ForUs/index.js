@@ -4,6 +4,7 @@ import YellowBlock from './YellowBlock';
 const ForUs = () =>{
     return(
       <>
+      <div className={styles.wrapper}>
       <section id='home'>
                     <p className={styles.dot} >.</p>
                     </section>
@@ -37,6 +38,7 @@ const ForUs = () =>{
                   </div>
                   <HowWEWork/>
                     <YellowBlock/>
+                    </div>
                   </>
                   )
                   }

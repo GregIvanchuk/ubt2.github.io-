@@ -11,21 +11,21 @@ function Header() {
   const [scrollPosition, setScrollPosition] = useState(70);
   const [isVisible, setIsVisible] = useState(false);
   const scrollThreshold = 50;
-  // const handleScroll = () => {
-  //   const currentPosition = window.pageYOffset;
-  //   if (currentPosition < scrollPosition && isVisible) {
-  //     setIsVisible(false);
-  //   } else if (currentPosition > scrollPosition && !isVisible) {
-  //     setIsVisible(true);
-  //   }
-  //   setScrollPosition(currentPosition);
-  // };
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll, { passive: true });
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [isVisible, scrollPosition]);
+  const handleScroll = () => {
+    const currentPosition = window.pageYOffset;
+    if (currentPosition < scrollPosition && isVisible) {
+      setIsVisible(false);
+    } else if (currentPosition > scrollPosition && !isVisible) {
+      setIsVisible(true);
+    }
+    setScrollPosition(currentPosition);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isVisible, scrollPosition]);
     let openHandler= () => {
         setOpen(!open);
       }
@@ -73,7 +73,7 @@ function Header() {
       }
   return (
     <>
-      <header className={isVisible ? styles.header : ""}>
+      <header className={isMobile ? styles.header :( isVisible ? styles.header : "" )}>
       <div className={styles.header_container}>
       <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
