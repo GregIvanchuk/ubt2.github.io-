@@ -19,6 +19,20 @@
     margin-top: 120px;
    
 }
+button{
+    cursor: pointer;
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+    color: white;
+    background-color:#fde910;
+    border:none;
+    color: black;
+}
+button:hover{
+    background-color: rgb(163, 163, 15);
+}
+   
 /* @media(max-width:1130px){
     .content{
         display: flex;
@@ -119,6 +133,16 @@ textarea{
     padding-left: 5px;
 }
 @media(max-width:1050px){
+    button{
+        cursor: pointer;
+        height: 45px;
+        width: 250px;
+        font-size: 17px;
+        color: white;
+        background-color:#fde910;
+        border:none;
+        color: black;
+    }
     .contacts{
         display: flex;
         justify-content: center;
@@ -235,17 +259,4 @@ textarea{
         width:247px;
     } */
 
-button{
-    cursor: pointer;
-    height: 50px;
-    width: 300px;
-    font-size: 17px;
-    color: white;
-    background-color:#fde910;
-    border:none;
-    color: black;
-}
-button:hover{
-    background-color: rgb(163, 163, 15);
-}
-   
+

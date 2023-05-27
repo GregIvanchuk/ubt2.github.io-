@@ -50,14 +50,14 @@
       margin-right: 100px;
   }
   .innerSl h1 {
-    font-size:45px;
+    font-size:80px;
     font-family: "Oswald" ;
     font-weight: bold;
   }
   .innerSl button{
     cursor: pointer;
     width: 300px;
-    height: 60px;
+    height: 70px;
     color: black;
     background-color: #fde910;
     border: none;
@@ -77,7 +77,7 @@
       height: 30px;
     }
     .innerSl h1 {
-      font-size:35px;
+      font-size:45px;
     }
     .innerSl button{
       cursor: pointer;

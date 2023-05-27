@@ -54,7 +54,7 @@ function Card(props) {
     <section id='slider'>
     <div  className={styles.sliderStyles}>
               <section id='home'>
-            <h1>НАШІ РОБОТИ</h1>
+            <h1 className={styles.h1}>НАШІ РОБОТИ</h1>
             </section>
                     <div  className={styles.slideStyles} >
                           <img width={1500} height={750}  src={slides[parentData][currentIndex]}/> 

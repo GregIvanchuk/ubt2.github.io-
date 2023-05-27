@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
+    margin-top: 10px;
 } 
 .container{
     display: grid;
@@ -18,7 +19,7 @@
     margin-top: 10px;
 }
 .header_title{
-    font-size: 25px;
+    font-size: 40px;
 }
 .item1{
     display: flex;
@@ -60,20 +61,43 @@
     justify-content: center;
 }
 .header_numder{
-    font-size: 70px;
+    font-size: 100px;
 } 
 ul li , ul p {
-    font-size: 20px;
+    font-size: 30px;
 }
-@media(max-width:910px){
+@media(max-width:2000px){
     ul li , ul p {
-        font-size: 10px;
+        font-size: 20px;
+    }
+    .header_numder{
+        font-size: 80px;
+    }  
+    .header_title{
+        font-size: 30px;
+    }
+}
+@media(max-width:1200px){
+    ul li , ul p {
+        font-size: 18px;
+    }
+    .header_numder{
+        font-size: 70px;
+    }  
+    .header_title{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:800px){
+    ul li , ul p {
+        font-size: 12px;
     }
     .header_numder{
         font-size: 50px;
     }  
     .header_title{
-        font-size: 13px;
+        font-size: 15px;
     }
 }
 
@@ -83,6 +107,9 @@ ul li , ul p {
     }
     ul {
         padding: 7px;
+    }
+    .header_title{
+        font-size: 13px;
     }
 }
 

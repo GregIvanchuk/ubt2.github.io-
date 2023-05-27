@@ -4,7 +4,7 @@ function HowWEWork() {
   return (
     <>   
     <div className={styles.wrapper}>
-        <h1>ЯК МИ ПРАЦЮЄМО</h1>
+        {/* <h1>ЯК МИ ПРАЦЮЄМО</h1> */}
         <div className={styles.container}>
             <div className={styles.item1 }>
                <div className={styles.header}>
