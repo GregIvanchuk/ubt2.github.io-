@@ -172,16 +172,17 @@
     .service{
       margin-left: 5px;
       margin-right: 5px;
-      width: 300px;
+     
+      align-items: flex-start;
     }
     .service h3 {
-      text-align: center;
+      text-align: start;
       font-size: 20px;
     } 
     .service p {
       margin-left: 0px;
       margin-right: 0px;
       font-size: 19px;
-      text-align: justify;
+      text-align: start;
     }
   }
