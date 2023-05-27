@@ -172,7 +172,7 @@
     .service{
       margin-left: 5px;
       margin-right: 5px;
-     
+      width: 300px;
       align-items: flex-start;
     }
     .service h3 {
