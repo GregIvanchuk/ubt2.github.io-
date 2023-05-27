@@ -73,7 +73,7 @@ function Header() {
       }
   return (
     <>
-      <header className={(isMobile || isVisible) ? styles.header : "" }>
+      <header className={ !isMobile ?  (isVisible ? styles.header : "" ) : styles.header }>
       <div className={styles.header_container}>
       <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
