@@ -22,6 +22,7 @@ function Pr5() {
   return (
     <>
     <div className={styles.wrapper}>
+    <section id='home'>
       <div className={styles.aboutUs}>
                     <div className={styles.aboutUsContent}>
                       <h1>Запоріжжя ЖК «Комфорт Таун» 59 м²</h1>
@@ -33,6 +34,7 @@ function Pr5() {
                     </div>
                     {/* <img src="/images/Photos/pr12.JPG" alt="" /> */}
                   </div>
+                  </section>
         <div className={styles.gallery}>
           {imgh.map((item, index) => (
             <div key={index} className={(itemIndex === index && itemClicked  )   ? styles.activeCont : styles.cont} ><img

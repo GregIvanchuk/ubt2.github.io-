@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import styles from './Contacts.module.css';
+import { isMobile } from 'react-device-detect';
 function Contacts() {
   const { register, handleSubmit, reset , formState: { errors } } = useForm();
   const apiForm2 = process.env.REACT_APP_API_URL_FORM_TWO
@@ -38,7 +39,11 @@ function Contacts() {
             </div>
             <div className={styles.contact}>
             <h2>ТЕЛЕФОН:</h2>
+            { isMobile ?
             <a href="tel:+380937725057">+380 (93) 772-50-57</a>
+             :
+             <a >+380 (93) 772-50-57</a>
+          }
             </div>
             </div>
             {/* <div className={styles.linkSocial}>

@@ -10,6 +10,39 @@
     background-color: black;
     width: 100%;
     transition: transform 0.3s ease-in-out;
+    height: 180px;
+  }
+  .store_title h3 {
+    display: flex;
+    letter-spacing: 6px;
+    font-family: "El Messiri";
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #fde910;
+  }
+  .store_title h4 {
+    letter-spacing: 3px;
+    margin-left: 10px;
+    margin-top: -28px;
+    padding-top: 100 px;
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fde910;
+  }
+  .rigthHeader li a {
+    text-decoration: none;
+    color: #fde910;
+    font-size: 25px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
   }
   .header {
     transform: translateY(-100%);
@@ -23,6 +56,26 @@
     justify-content: space-around;
     align-items: center;
     gap: calc(130px + 1vw);
+  }
+  @media (max-width: 2000px) {
+    header {
+      height: 100px;
+    }
+    .store_title h3 {
+    font-size: 25px;
+  }
+  
+  .store_title h4 {
+    font-size: 10px;
+  }
+  .rigthHeader li a {
+    font-size: 16px;
+  }
+  }
+  @media (max-width: 1700px) {
+    header {
+      height: 90px;
+    }
   }
   @media (max-width: 1400px) {
     .header {
@@ -46,30 +99,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  .store_title h3 {
-    display: flex;
-    letter-spacing: 6px;
-    font-family: "El Messiri";
-    white-space: nowrap;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: #fde910;
-  }
-  .store_title h4 {
-    letter-spacing: 3px;
-    margin-left: 10px;
-    margin-top: -28px;
-    padding-top: 100 px;
-    font-family: "Catamaran";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 20px;
-    color: #fde910;
-  }
+  
   .rigthHeader {
     display: flex;
     align-items: center;
@@ -90,14 +120,7 @@
     display: flex;
     gap: 10px;
   }
-  .rigthHeader li a {
-    text-decoration: none;
-    color: #fde910;
-    font-size: 16px;
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 700;
-  }
+  
   .rigthHeader li .activen  {
     color:rgb(82, 61, 8);
   }

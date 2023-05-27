@@ -3,6 +3,7 @@ import React, {useEffect,useState} from "react";
 import { Helmet } from 'react-helmet';
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, scroller  } from "react-scroll";
+import { isMobile } from 'react-device-detect';
 
 function Header() {
   const [activeItem, setActiveItem] = React.useState(0);
@@ -90,10 +91,17 @@ function Header() {
         </div>
         <div className={open ? styles.menu : styles.menu + " " + styles.active }>
         <ul  onClick={() => openHandler()}   className={styles.rigthHeader}>
+          { isMobile ?
         <li>
            <a href="tel:+380937725057">+380 (93) 772-50-57</a>
             </li>
+            :
+            <li>
+            <a >+380 (93) 772-50-57</a>
+             </li>
+            }
            <li >
+            
            <RouterLink className={activeItem === 0 ? styles.activen : ''} onClick={() => setActiveItem(0)}  to="/">
                     ГОЛОВНА
                 </RouterLink>

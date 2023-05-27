@@ -1,6 +1,7 @@
 import styles from './Footer.module.css';
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink, scroller  } from "react-scroll";
+import { isMobile } from 'react-device-detect';
 function handleClickStart()  {
     scroller.scrollTo("home", {
       duration: 800,
@@ -26,7 +27,11 @@ function Footer() {
            <div className={styles.secondBlock}>
             <h4>КОНТАКТИ</h4>
              <p>E-mail: <a href="mailto:spstudiolviv@gmail.com"target="_blank">spstudiolviv@gmail.com</a></p>
+             { isMobile ?
              <p>Телефон:  <a href="tel:+380937725057"> +380 (93) 772-50-57</a></p>
+             :
+             <p>Телефон:  <a > +380 (93) 772-50-57</a></p>
+            }
              <p>Графік роботи: Пн-Сб: 09:30 - 18:00</p>
            </div>
            <div className={styles.threeBlock}>

@@ -11,6 +11,7 @@
     "dotenv": "^16.0.3",
     "react": "^18.2.0",
     "react-css-modules": "^4.7.11",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.43.9",

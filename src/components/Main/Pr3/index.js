@@ -22,6 +22,7 @@ function Pr3() {
   return (
     <>
     <div className={styles.wrapper}>
+    <section id='home'>
       <div className={styles.aboutUs}>
                     <div className={styles.aboutUsContent}>
                       <h1>м. Ірпінь, ЖК «Синергія» 95 м²</h1>
@@ -33,6 +34,7 @@ function Pr3() {
                     </div>
                     {/* <img src="/images/Photos/pr12.JPG" alt="" /> */}
                   </div>
+                  </section>
         <div className={styles.gallery}>
           {img.map((item, index) => (
             <div key={index} className={(itemIndex === index && itemClicked  )   ? styles.activeCont : styles.cont} ><img
