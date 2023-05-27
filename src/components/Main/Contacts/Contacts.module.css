@@ -195,6 +195,10 @@ textarea{
 }
 
 @media(max-width:525px){
+    .content{
+        margin-top: 90px;
+       
+    }
     /* .item select,.item select option{
         width:297px;
     }; */
