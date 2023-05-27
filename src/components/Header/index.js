@@ -8,10 +8,11 @@ import { isMobile } from 'react-device-detect';
 function Header() {
   const [activeItem, setActiveItem] = React.useState(0);
   let  [open,setOpen] = React.useState("true")
-  const [scrollPosition, setScrollPosition] = useState(70);
+  const [scrollPosition, setScrollPosition] = useState(100);
   const [isVisible, setIsVisible] = useState(false);
   const scrollThreshold = 50;
   const handleScroll = () => {
+    if(!isMobile) {
     const currentPosition = window.pageYOffset;
     if (currentPosition < scrollPosition && isVisible) {
       setIsVisible(false);
@@ -19,6 +20,7 @@ function Header() {
       setIsVisible(true);
     }
     setScrollPosition(currentPosition);
+  }
   };
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -73,7 +75,7 @@ function Header() {
       }
   return (
     <>
-      <header className={ !isMobile ?  (isVisible ? styles.header : "" ) : styles.header }>
+      <header className={isVisible ? styles.header : ""}>
       <div className={styles.header_container}>
       <Helmet>
       <link rel="preconnect" href="https://fonts.googleapis.com"/>
