@@ -18,6 +18,7 @@
   font-size: 50px;
 } 
   .service{
+    max-width: 2000px;
     background-color: #111111;
     cursor: pointer;
     display: flex;

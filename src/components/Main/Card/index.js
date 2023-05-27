@@ -50,6 +50,7 @@ function Card(props) {
 
   return (
     <>
+    <div className={styles.wrapper}>
     <section id='slider'>
     <div  className={styles.sliderStyles}>
               <section id='home'>
@@ -138,7 +139,7 @@ function Card(props) {
                      </Link>
                     </div>
                   </div>
-                      
+                  </div>
     </>
   );
 }
