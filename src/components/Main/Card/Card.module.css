@@ -154,11 +154,27 @@
     background: linear-gradient(to bottom ,rgba(0, 0, 0, 0.6) 0%,rgba(1, 1, 1, 1) 100%);
    
   } */
-  .slideStyles img {
-    max-width: 100%;
-    border-radius: 6px;
-  }
+ 
+    .slideStyles img {
+      max-width: 1500px;
+      height: 800px;
+      border-radius: 6px;
+    }
+
+  @media(max-width:2000px){
+    .slideStyles img {
+      max-width: 1300px;
+      height: 600px;
+      border-radius: 6px;
+    }
+}
   
+  @media(max-width:1400px){
+    .slideStyles img  {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+}
   .leftArrowStyles {
     position: absolute;
     top: 50%;
