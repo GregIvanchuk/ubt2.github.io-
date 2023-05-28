@@ -254,7 +254,7 @@ z-index: 10000000;
         height: 600px;
 }
 }
-@media(max-width:550px) {
+@media(max-width:600px) {
     .aboutUsContent {
         padding-left: 10px;
     }
