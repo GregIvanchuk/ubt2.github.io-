@@ -23,7 +23,7 @@ function Main({ handleApp }) {
                 <div className="container">
                         <Services /> 
                         <Card callback={handleMain} />
-                        <ForUs /> 
+                        {/* <ForUs />  */}
                     <Contacts/>
                     {/* {/* <SecondSlider />  */}
                 </div>
