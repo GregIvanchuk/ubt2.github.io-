@@ -59,7 +59,7 @@
   }
   @media (max-width: 2000px) {
     header {
-      height: 100px;
+      height: 90px;
     }
     .store_title h3 {
     font-size: 25px;
