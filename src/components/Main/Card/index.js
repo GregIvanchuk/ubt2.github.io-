@@ -82,7 +82,7 @@ function Card(props) {
                      <ScrollLink onClick={handleClickSlider}  to="/slider" >  <button onClick={(event)=>handleClick(event)} data-button-number={id} >Переглянути</button></ScrollLink>
                      
                     )}     */}
-
+<div className={styles.gf}>
 <Link to="/pr1">
   <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr11.JPG" />
@@ -110,6 +110,8 @@ function Card(props) {
                       </div>
                      </div>
                      </Link>
+                     </div>
+                     <div className={styles.gf}>
                      <Link to="/pr4">
                       <div className={`${styles.ourItem} ${styles.ourItem1}`}>
                       <img className={styles.ourItemImg} height={242} width={400} src="/images/Photos/pr41v.png"  />
@@ -137,6 +139,7 @@ function Card(props) {
                       </div>
                      </div>
                      </Link>
+                     </div>
                     </div>
                   </div>
                   </div>

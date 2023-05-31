@@ -53,6 +53,7 @@ function Pr6() {
             />
             </div>
           ))}
+           <Link to="/projects"><button className={styles.button}>Повернутися назад</button></Link>
         </div>
       </div>
     </>

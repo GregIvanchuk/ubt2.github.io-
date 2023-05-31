@@ -4,6 +4,10 @@
 .h1 {
   font-size: 50px;
 }
+.gf{
+  display: flex;
+  gap: 50px;
+}
 @media(max-width:2000px){
   .wrapper{
     margin-top: 0px;
@@ -34,6 +38,25 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+  @media(max-width:2700px){
+    .ourItems{
+      gap: 80px;
+     
+    }
+    .gf{
+      gap: 80px;
+    }
+  }
+  @media(max-width:1500px){
+    .ourItems{
+      gap: 40px;
+     
+    }
+    .gf{
+      gap: 40px;
+      flex-direction: column;
+    }
   }
   .ourItem {
     cursor: pointer;
@@ -96,6 +119,7 @@
     border: none;
     margin-bottom: 20px;
     border-radius: 3px ;
+    font-size: 17px;
   }
   .ourItem button:hover{
     cursor: pointer;
@@ -130,7 +154,6 @@
     width: 100%;
     position: relative;
   }
-  
   
   .slideStyles {
     margin-left: 10px;
@@ -168,7 +191,6 @@
       border-radius: 6px;
     }
 }
-  
   @media(max-width:1400px){
     .slideStyles img  {
       max-width: 100%;

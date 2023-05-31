@@ -17,6 +17,7 @@ import Pr4 from "./components/Main/Pr4";
 import Pr5 from "./components/Main/Pr5";
 import Pr6 from "./components/Main/Pr6";
 import Conect from "./components/Conect/Conect";
+import ButtonV from "./components/ButtonV/ButtonV";
 
 function App() {
    
@@ -94,6 +95,7 @@ function App() {
                 </div>
             </Router>
             <Conect/>
+            <ButtonV/>
             <Footer />
            
         </>
