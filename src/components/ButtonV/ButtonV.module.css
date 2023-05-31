@@ -50,7 +50,7 @@
 @media(max-width:500px){
   .cont{
   width: 40px;
-  height: 45px;
+  height: 40px;
   background-color: rgb(30, 30, 30);
 }
 .cont img {
