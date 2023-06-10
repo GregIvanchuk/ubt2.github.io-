@@ -48,13 +48,16 @@
       gap: 80px;
     }
   }
-  @media(max-width:1500px){
+  @media(max-width:1510px){
     .ourItems{
-      gap: 40px;
-     
+      gap: 40px;   
     }
     .gf{
       gap: 40px;
+    }
+  }
+  @media(max-width:1340px){
+    .gf{
       flex-direction: column;
     }
   }

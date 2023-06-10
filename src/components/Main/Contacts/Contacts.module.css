@@ -92,16 +92,19 @@ button:hover{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 185px;
+    gap: 115px;
 }
 .contact{
     display: flex;
     flex-direction: column
 }
+.contact h2 {
+    font-size: 30px;
+}
 .contact a {
     color: rgb(135, 135, 0);
     text-decoration: none;
-    font-size: 18px;
+    font-size: 23px;
 }
 form {
     width: 1000px;
@@ -142,6 +145,14 @@ textarea{
         background-color:#fde910;
         border:none;
         color: black;
+    }
+    .contact h2 {
+        font-size: 25px;
+    }
+    .contact a {
+        color: rgb(135, 135, 0);
+        text-decoration: none;
+        font-size: 18px;
     }
     .contacts{
         display: flex;

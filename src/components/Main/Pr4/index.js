@@ -18,8 +18,8 @@ function Pr4() {
     setItemIndex(index);
   };
  
-    const imgv = ["/images/Photos/pr41v.png","/images/Photos/pr42v.png","/images/Photos/pr43v.png","/images/Photos/pr44v.png"]
-    const img = ["/images/Photos/pr41.png","/images/Photos/pr42.png","/images/Photos/pr43.png","/images/Photos/pr44.png","/images/Photos/pr45.png","/images/Photos/pr46.png"]
+    const imgv = ["/images/Photos/pr41v.png","/images/Photos/pr42v.jpg","/images/Photos/pr43v.jpg","/images/Photos/pr44v.jpg"]
+    const img = ["/images/Photos/pr41.jpg","/images/Photos/pr42.jpg","/images/Photos/pr43.jpg","/images/Photos/pr44.jpg","/images/Photos/pr45.jpg","/images/Photos/pr46.jpg"]
   return (
     <>
     <div className={styles.wrapper}>
