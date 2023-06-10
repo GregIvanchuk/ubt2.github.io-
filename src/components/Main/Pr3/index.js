@@ -17,8 +17,8 @@ function Pr3() {
     setItemClicked(!itemClicked)
     setItemIndex(index);
   };
-    const imgv = ["/images/Photos/pr33v.jpg","/images/Photos/pr31v.jpg","/images/Photos/pr32v.jpg","/images/Photos/pr34v.jpg",]
-    const img = ["/images/Photos/pr43.jpg" ,"/images/Photos/pr44.jpg","/images/Photos/pr45.jpg","/images/Photos/pr46.jpg","/images/Photos/pr47.jpg","/images/Photos/pr48.jpg"]
+    const imgv = ["/images/Photos/5.jpg","/images/Photos/6.jpg","/images/Photos/pr33v.jpg","/images/Photos/pr31v.jpg","/images/Photos/pr32v.jpg","/images/Photos/pr34v.jpg",]
+    const img = ["/images/Photos/pr47.jpg","/images/Photos/pr48.jpg"]
   return (
     <>
     <div className={styles.wrapper}>
