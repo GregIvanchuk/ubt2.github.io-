@@ -5,7 +5,7 @@ import { Link as ScrollLink, scroller  } from "react-scroll";
 function Card(props) {
   const [parentData, setParentData] = useState(0)
   const slides=[
-    ["/images/Photos/pr44.jpg","/images/Photos/pr24.PNG","/images/Photos/pr47.jpg","/images/Photos/pr24.PNG","/images/Photos/pr37.jpg"],
+    ["/images/Photos/pr37.jpg","/images/Photos/pr24.PNG","/images/Photos/pr47.jpg","/images/Photos/pr24.PNG","/images/Photos/pr44.jpg"],
     
   ]
   // ["/images/woman1.jpg","/images/woman2.jpg","/images/man.jpg",],
